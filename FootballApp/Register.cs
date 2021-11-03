@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace FootballApp
 {
-    public partial class Anmeldung : Form
+    public partial class Register : Form
     {
-        public Anmeldung()
+        public Register()
         {
             InitializeComponent();
+        }
+
+        private void Register_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

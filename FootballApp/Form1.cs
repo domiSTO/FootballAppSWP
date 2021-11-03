@@ -61,5 +61,14 @@ namespace FootballApp
             this.Hide();
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //Öffnet das Login Fenster
+            Login login_start = new Login();
+            login_start.Show();
+            this.Hide();
+            this.Close();
+        }
     }
 }
