@@ -23,7 +23,6 @@ namespace FootballApp
             Bundesliga bundesliga = new Bundesliga();
             bundesliga.Show();
             this.Hide();
-            this.Close();
         }
 
         private void btn_PremierLeague_Click(object sender, EventArgs e)
@@ -32,7 +31,6 @@ namespace FootballApp
             PremierLeague premierleague = new PremierLeague();
             premierleague.Show();
             this.Hide();
-            this.Close();
         }
 
         private void btn_Ligue1_Click(object sender, EventArgs e)
@@ -41,7 +39,6 @@ namespace FootballApp
             Ligue1 ligue1 = new Ligue1();
             ligue1.Show();
             this.Hide();
-            this.Close();
         }
 
         private void btn_SerieA_Click(object sender, EventArgs e)
@@ -50,7 +47,6 @@ namespace FootballApp
             SerieA seriea = new SerieA();
             seriea.Show();
             this.Hide();
-            this.Close();
         }
 
         private void btn_LaLiga_Click(object sender, EventArgs e)
@@ -59,16 +55,36 @@ namespace FootballApp
             LaLiga laliga = new LaLiga();
             laliga.Show();
             this.Hide();
-            this.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_Login_Click(object sender, EventArgs e)
         {
             //Öffnet das Login Fenster
             Login login_start = new Login();
             login_start.Show();
             this.Hide();
-            this.Close();
+        }
+
+        private void btn_Eredivisie_Click(object sender, EventArgs e)
+        {
+            Eredivisie eredivisie = new Eredivisie();
+            eredivisie.Show();
+            this.Hide();
+        }
+
+        private void tb_DarkTheme_CheckedChanged(object sender, EventArgs e)
+        {
+            if (tb_DarkTheme.Checked)
+            {
+                this.BackColor = Color.DimGray;
+                leagues_Title.ForeColor = Color.White;
+                
+            }
+            else
+            {
+                this.BackColor = Color.WhiteSmoke;
+                leagues_Title.ForeColor = Color.Black;
+            }
         }
     }
 }

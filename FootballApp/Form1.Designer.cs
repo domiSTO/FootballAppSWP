@@ -36,7 +36,9 @@ namespace FootballApp
             this.btn_Ligue1 = new System.Windows.Forms.Button();
             this.btn_SerieA = new System.Windows.Forms.Button();
             this.btn_LaLiga = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_Login = new System.Windows.Forms.Button();
+            this.btn_Eredivisie = new System.Windows.Forms.Button();
+            this.tb_DarkTheme = new FootballApp.ToggleButton();
             this.SuspendLayout();
             // 
             // leagues_Title
@@ -109,25 +111,52 @@ namespace FootballApp
             this.btn_LaLiga.UseVisualStyleBackColor = true;
             this.btn_LaLiga.Click += new System.EventHandler(this.btn_LaLiga_Click);
             // 
-            // button1
+            // btn_Login
             // 
-            this.button1.FlatAppearance.BorderSize = 2;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(641, 19);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(107, 43);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Login";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_Login.FlatAppearance.BorderSize = 2;
+            this.btn_Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Login.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Login.Location = new System.Drawing.Point(641, 19);
+            this.btn_Login.Name = "btn_Login";
+            this.btn_Login.Size = new System.Drawing.Size(107, 43);
+            this.btn_Login.TabIndex = 6;
+            this.btn_Login.Text = "Login";
+            this.btn_Login.UseVisualStyleBackColor = true;
+            // 
+            // btn_Eredivisie
+            // 
+            this.btn_Eredivisie.FlatAppearance.BorderSize = 0;
+            this.btn_Eredivisie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Eredivisie.Image = ((System.Drawing.Image)(resources.GetObject("btn_Eredivisie.Image")));
+            this.btn_Eredivisie.Location = new System.Drawing.Point(304, 347);
+            this.btn_Eredivisie.Name = "btn_Eredivisie";
+            this.btn_Eredivisie.Size = new System.Drawing.Size(203, 194);
+            this.btn_Eredivisie.TabIndex = 7;
+            this.btn_Eredivisie.UseVisualStyleBackColor = true;
+            // 
+            // tb_DarkTheme
+            // 
+            this.tb_DarkTheme.AutoSize = true;
+            this.tb_DarkTheme.Location = new System.Drawing.Point(59, 31);
+            this.tb_DarkTheme.MinimumSize = new System.Drawing.Size(45, 22);
+            this.tb_DarkTheme.Name = "tb_DarkTheme";
+            this.tb_DarkTheme.OffBackColor = System.Drawing.Color.Gray;
+            this.tb_DarkTheme.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.tb_DarkTheme.OnBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.tb_DarkTheme.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.tb_DarkTheme.Size = new System.Drawing.Size(45, 22);
+            this.tb_DarkTheme.TabIndex = 8;
+            this.tb_DarkTheme.UseVisualStyleBackColor = true;
+            this.tb_DarkTheme.CheckedChanged += new System.EventHandler(this.tb_DarkTheme_CheckedChanged);
             // 
             // Frm_Leagues
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 583);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.tb_DarkTheme);
+            this.Controls.Add(this.btn_Eredivisie);
+            this.Controls.Add(this.btn_Login);
             this.Controls.Add(this.btn_LaLiga);
             this.Controls.Add(this.btn_SerieA);
             this.Controls.Add(this.btn_Ligue1);
@@ -135,7 +164,7 @@ namespace FootballApp
             this.Controls.Add(this.btn_Bundesliga);
             this.Controls.Add(this.leagues_Title);
             this.Name = "Frm_Leagues";
-            this.Text = "Liegen wählen";
+            this.Text = "Ligen wählen";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -149,7 +178,9 @@ namespace FootballApp
         private System.Windows.Forms.Button btn_Ligue1;
         private System.Windows.Forms.Button btn_SerieA;
         private System.Windows.Forms.Button btn_LaLiga;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_Login;
+        private System.Windows.Forms.Button btn_Eredivisie;
+        private ToggleButton tb_DarkTheme;
     }
 }
 
