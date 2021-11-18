@@ -37,6 +37,7 @@ namespace FootballApp
             this.label1 = new System.Windows.Forms.Label();
             this.lbl_Register_Login = new System.Windows.Forms.Button();
             this.btn_Login_Login = new System.Windows.Forms.Button();
+            this.btn_Back_Login = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbl_Title_Login
@@ -115,11 +116,22 @@ namespace FootballApp
             this.btn_Login_Login.UseVisualStyleBackColor = true;
             this.btn_Login_Login.Click += new System.EventHandler(this.btn_Login_Login_Click);
             // 
+            // btn_Back_Login
+            // 
+            this.btn_Back_Login.Location = new System.Drawing.Point(12, 341);
+            this.btn_Back_Login.Name = "btn_Back_Login";
+            this.btn_Back_Login.Size = new System.Drawing.Size(75, 23);
+            this.btn_Back_Login.TabIndex = 8;
+            this.btn_Back_Login.Text = "Zurück";
+            this.btn_Back_Login.UseVisualStyleBackColor = true;
+            this.btn_Back_Login.Click += new System.EventHandler(this.btn_Back_Login_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(354, 391);
+            this.Controls.Add(this.btn_Back_Login);
             this.Controls.Add(this.btn_Login_Login);
             this.Controls.Add(this.lbl_Register_Login);
             this.Controls.Add(this.label1);
@@ -145,5 +157,6 @@ namespace FootballApp
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button lbl_Register_Login;
         private System.Windows.Forms.Button btn_Login_Login;
+        private System.Windows.Forms.Button btn_Back_Login;
     }
 }
