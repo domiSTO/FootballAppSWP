@@ -120,7 +120,7 @@ namespace FootballApp
                 //Draw the toggle
                 pevent.Graphics.FillEllipse(new SolidBrush(onToggleColor), new Rectangle(this.Width - this.Height + 1, 2, toggleSize, toggleSize));
             }
-            else//Off
+            else //Off
             {
                 //Draw Background
                 pevent.Graphics.FillPath(new SolidBrush(offBackColor), GetFigurePath());

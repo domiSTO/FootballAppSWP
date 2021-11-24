@@ -36,6 +36,20 @@ namespace FootballApp
                 MessageBox.Show("Erfolgreich angemeldet","Erfolgreich", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
+            try
+            {
+                SQL_Connection.Username = tb_Username_Login.Text;
+                SQL_Connection.Password = tb_Password_Login.Text;
+                SQL_Connection.buildDatabase();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                this.Show();
+            }
+
+            Environment.Exit(0);
+
             Frm_Leagues leagues = new Frm_Leagues();
             leagues.Show();
             this.Hide();
@@ -44,6 +58,10 @@ namespace FootballApp
 
         private void btn_Back_Login_Click(object sender, EventArgs e)
         {
+            Frm_Leagues leagues = new Frm_Leagues();
+            leagues.Show();
+            this.Hide();
+            this.Close();
 
         }
     }

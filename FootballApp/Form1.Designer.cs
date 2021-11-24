@@ -40,9 +40,9 @@ namespace FootballApp
             this.btn_Eredivisie = new System.Windows.Forms.Button();
             this.btn_Premierleague_Darkmode = new System.Windows.Forms.Button();
             this.btn_Eredivisie_Darkmode = new System.Windows.Forms.Button();
-            this.tb_DarkTheme = new FootballApp.ToggleButton();
             this.pb_LightMode = new System.Windows.Forms.PictureBox();
             this.pb_DarkMode = new System.Windows.Forms.PictureBox();
+            this.tb_DarkTheme = new FootballApp.ToggleButton();
             ((System.ComponentModel.ISupportInitialize)(this.pb_LightMode)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_DarkMode)).BeginInit();
             this.SuspendLayout();
@@ -165,21 +165,6 @@ namespace FootballApp
             this.btn_Eredivisie_Darkmode.UseVisualStyleBackColor = true;
             this.btn_Eredivisie_Darkmode.Click += new System.EventHandler(this.btn_Eredivisie_Darkmode_Click);
             // 
-            // tb_DarkTheme
-            // 
-            this.tb_DarkTheme.AutoSize = true;
-            this.tb_DarkTheme.Location = new System.Drawing.Point(59, 31);
-            this.tb_DarkTheme.MinimumSize = new System.Drawing.Size(45, 22);
-            this.tb_DarkTheme.Name = "tb_DarkTheme";
-            this.tb_DarkTheme.OffBackColor = System.Drawing.Color.DarkOrange;
-            this.tb_DarkTheme.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.tb_DarkTheme.OnBackColor = System.Drawing.Color.LimeGreen;
-            this.tb_DarkTheme.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.tb_DarkTheme.Size = new System.Drawing.Size(45, 22);
-            this.tb_DarkTheme.TabIndex = 8;
-            this.tb_DarkTheme.UseVisualStyleBackColor = true;
-            this.tb_DarkTheme.CheckedChanged += new System.EventHandler(this.tb_DarkTheme_CheckedChanged);
-            // 
             // pb_LightMode
             // 
             this.pb_LightMode.Image = ((System.Drawing.Image)(resources.GetObject("pb_LightMode.Image")));
@@ -199,6 +184,21 @@ namespace FootballApp
             this.pb_DarkMode.Size = new System.Drawing.Size(50, 55);
             this.pb_DarkMode.TabIndex = 12;
             this.pb_DarkMode.TabStop = false;
+            // 
+            // tb_DarkTheme
+            // 
+            this.tb_DarkTheme.AutoSize = true;
+            this.tb_DarkTheme.Location = new System.Drawing.Point(59, 31);
+            this.tb_DarkTheme.MinimumSize = new System.Drawing.Size(45, 22);
+            this.tb_DarkTheme.Name = "tb_DarkTheme";
+            this.tb_DarkTheme.OffBackColor = System.Drawing.Color.DarkOrange;
+            this.tb_DarkTheme.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.tb_DarkTheme.OnBackColor = System.Drawing.Color.LimeGreen;
+            this.tb_DarkTheme.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.tb_DarkTheme.Size = new System.Drawing.Size(45, 22);
+            this.tb_DarkTheme.TabIndex = 8;
+            this.tb_DarkTheme.UseVisualStyleBackColor = true;
+            this.tb_DarkTheme.CheckedChanged += new System.EventHandler(this.tb_DarkTheme_CheckedChanged);
             // 
             // Frm_Leagues
             // 

@@ -102,6 +102,7 @@
     <Compile Include="SerieA.Designer.cs">
       <DependentUpon>SerieA.cs</DependentUpon>
     </Compile>
+    <Compile Include="SQL_Connection.cs" />
     <Compile Include="ToggleButton.cs">
       <SubType>Component</SubType>
     </Compile>
