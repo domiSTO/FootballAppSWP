@@ -19,7 +19,7 @@ namespace FootballApp
 
         private void btn_Bundesliga_Click(object sender, EventArgs e)
         {
-            //verlinkt auf das Bundesliga Form
+            //Links to the BUndesliga Form
             Bundesliga bundesliga = new Bundesliga();
             bundesliga.Show();
             this.Hide();
@@ -27,7 +27,7 @@ namespace FootballApp
 
         private void btn_PremierLeague_Click(object sender, EventArgs e)
         {
-            //verlinkt auf das Premier League Form
+            // links to the Premier League Form
             PremierLeague premierleague = new PremierLeague();
             premierleague.Show();
             this.Hide();
@@ -42,7 +42,7 @@ namespace FootballApp
 
         private void btn_Ligue1_Click(object sender, EventArgs e)
         {
-            //verlinkt auf das Ligue 1 Form
+            //links to the Ligue 1 Form
             Ligue1 ligue1 = new Ligue1();
             ligue1.Show();
             this.Hide();
@@ -50,7 +50,7 @@ namespace FootballApp
 
         private void btn_SerieA_Click(object sender, EventArgs e)
         {
-            //verlinkt auf das Serie A Form
+            //links to the Serie A Form
             SerieA seriea = new SerieA();
             seriea.Show();
             this.Hide();
@@ -58,7 +58,7 @@ namespace FootballApp
 
         private void btn_LaLiga_Click(object sender, EventArgs e)
         {
-            //verlinkt auf das LaLiga Form
+            //links to the LaLiga Form
             LaLiga laliga = new LaLiga();
             laliga.Show();
             this.Hide();
@@ -66,7 +66,7 @@ namespace FootballApp
 
         private void btn_Login_Click_1(object sender, EventArgs e)
         {
-            //Öffnet das Login Fenster
+            //links to the Login Form
             Login login_start = new Login();
             login_start.Show();
             this.Hide();
@@ -74,6 +74,7 @@ namespace FootballApp
 
         private void btn_Eredivisie_Click(object sender, EventArgs e)
         {
+            //links to the Eredivisie Form
             Eredivisie eredivisie = new Eredivisie();
             eredivisie.Show();
             this.Hide();

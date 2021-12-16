@@ -12,98 +12,94 @@ namespace FootballApp
     class SQL_Connection
     {
         public static SqlConnection con = new SqlConnection();
-        public static SqlCommand com = new SqlCommand();
+        static SqlCommand cmd = new SqlCommand();
+        private static SqlCommandBuilder cmdbuild = new SqlCommandBuilder();
 
-        private static string ip;
 
-        public static string IP
+        //Creates Database if not exists
+        public static void CreateDatabase(string dbname)
         {
-            get
+            try
             {
-                return ip;
+                con.ConnectionString = @"Server=(localdb)\MSSQLLocalDB;";
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "if not exists(select * from sys.databases where name = '" + dbname + "') begin create database[" + dbname + "] end";
+                cmd.Connection = con;
+                con.Open();
+                cmd.ExecuteNonQuery();
+                con.Close();
+                //MessageBox.Show("Database created!");
             }
-            set
+            catch (Exception e)
             {
-                ip = value;
+                MessageBox.Show(e.Message);
             }
+
         }
 
-        private static string username;
-
-        public static string Username
+        //Creates Table if not exists
+        public static void CreateTable(string dbname, string tablename)
         {
-            get
-            {
-                return username;
-            }
-            set
-            {
-                username = value;
-            }
-        }
-
-        private static string password;
-
-        public static string Password
-        {
-            get
-            {
-                return password;
-            }
-            set
-            {
-                password = value;
-            }
-        }
-        public static void buildDatabase()
-        {
-            bool db = false;
-            bool tb = false;
             try
             {
                 con.Open();
-                DataTable dt = con.GetSchema("Databases");
-
-                foreach(DataRow dr in dt.Rows)
-                {
-                    if (dr[0].Equals("Football_Login"))
-                    {
-                        db = true;
-                    }
-                }
+                cmd.CommandText = "use [" + dbname + "] if not exists(select * from sysobjects where name = '" + tablename + "') begin create table " + tablename + "(Id int NOT NULL Primary Key,username varchar(20),password varchar(70)) end";
+                cmd.ExecuteNonQuery();
                 con.Close();
-                if (!db)
-                {
-                    com.Connection = con;
-                    com.CommandText = "Create Database Football_Login";
-                    con.Open();
-                    com.ExecuteNonQuery();
-                    con.Close();
-                }
-                con.ConnectionString += ";Database = Football_Login";
-                con.Open();
-                DataTable dtt = con.GetSchema("Tables");
-                foreach(DataRow dr in dtt.Rows)
-                {
-                    if(dr.Field<string>("table_name").Equals("login"))
-                    {
-                        tb = true;
-                    }
-                }
-                con.Close();
-                if(!tb)
-                {
-                    com.Connection = con;
-                    com.CommandText = "Create Table Login(user_id int )";
-                    con.Open();
-                    com.ExecuteNonQuery();
-                    con.Close();
-                }
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                MessageBox.Show(ex.ToString());
+                MessageBox.Show(e.Message);
+            }
+        }
+
+        //Login Check for the password
+        public static void CheckTable(string tablename, string v_username, string v_password)
+        {
+            string hashedpw;
+            try
+            {
+                con.ConnectionString = @"Server=(localdb)\MSSQLLocalDB; Database=FootballApp";
+                con.Open();
+                cmd.CommandText = "Select password From Login Where username='" + v_username + "'";
+                hashedpw = (string)cmd.ExecuteScalar();
+                //hashedpw = v_password;
+                if (hashedpw != null)
+                {
+                    if (BCrypt.CheckPassword(v_password, hashedpw))
+                    {
+                        MessageBox.Show("Sie haben sich erfolgreich angemeldet!", "Sie sind angemeldet!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Passwort stimmt nicht überein!", "Falsches Passwort!");
+                    }
+                }
+                con.Close();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+        }
+
+        //New Account inserts into the database 
+        public static void InsertInto(string tablename, string v_username, string v_password)
+        {
+
+            try
+            {
+                con.ConnectionString = @"Server=(localdb)\MSSQLLocalDB; Database=FootballApp";
+                con.Open();
+                cmd.CommandText = "INSERT INTO " + tablename + "(username,password) VALUES('" + v_username + "', '" + v_password + "')";
+                cmd.ExecuteNonQuery();
+                con.Close();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
             }
         }
     }
+    
 }

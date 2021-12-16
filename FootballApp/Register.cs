@@ -17,9 +17,39 @@ namespace FootballApp
             InitializeComponent();
         }
 
-        private void Register_Load(object sender, EventArgs e)
+        private void btn_Register_Register_Click(object sender, EventArgs e)
         {
+            string salt;
+            string hashedpw;
 
+            if (tb_Password_Register.Text == tb_PasswordConfirm_Register.Text)
+            {
+                salt = BCrypt.GenerateSalt();
+
+                hashedpw = BCrypt.HashPassword(tb_PasswordConfirm_Register.Text, salt);
+
+                SQL_Connection.InsertInto("Login", tb_Username_Register.Text, hashedpw);
+
+                MessageBox.Show("Neuer Account wurde erstellt!", "Account erstellt!");
+            }
+            else
+            {
+                MessageBox.Show("Passwörter stimmen nicht überein.", "Passwort Error!");
+            }
+        }
+
+        private void cb_ShowPassword_Register_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cb_ShowPassword_Register.Checked == true)
+            {
+                tb_Password_Register.UseSystemPasswordChar = false;
+                tb_PasswordConfirm_Register.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                tb_Password_Register.UseSystemPasswordChar = true;
+                tb_PasswordConfirm_Register.UseSystemPasswordChar = true;
+            }
         }
     }
 }
