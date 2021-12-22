@@ -36,10 +36,41 @@ namespace FootballApp
                 MessageBox.Show("Erfolgreich angemeldet","Erfolgreich", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
+            SQL_Connection.CheckTable("Login", tb_Username_Login.Text, tb_Password_Login.Text);
+
+            Environment.Exit(0);
+
             Frm_Leagues leagues = new Frm_Leagues();
             leagues.Show();
             this.Hide();
             this.Close();
+        }
+
+        private void btn_Back_Login_Click(object sender, EventArgs e)
+        {
+            Frm_Leagues leagues = new Frm_Leagues();
+            leagues.Show();
+            this.Hide();
+            this.Close();
+
+        }
+
+        private void cb_ShowPassword_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cb_ShowPassword.Checked == true)
+            {
+                tb_Password_Login.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                tb_Password_Login.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            SQL_Connection.CreateDatabase("FootballApp");
+            SQL_Connection.CreateTable("FootballApp", "Login");
         }
     }
 }

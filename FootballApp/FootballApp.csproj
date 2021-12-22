@@ -46,6 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BCrypt.cs" />
+    <Compile Include="Eredivisie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eredivisie.Designer.cs">
+      <DependentUpon>Eredivisie.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +102,10 @@
     </Compile>
     <Compile Include="SerieA.Designer.cs">
       <DependentUpon>SerieA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SQL_Connection.cs" />
+    <Compile Include="ToggleButton.cs">
+      <SubType>Component</SubType>
     </Compile>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

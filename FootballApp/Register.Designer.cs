@@ -37,6 +37,7 @@ namespace FootballApp
             this.tb_PasswordConfirm_Register = new System.Windows.Forms.TextBox();
             this.lbl_Passwordconfirm_Register = new System.Windows.Forms.Label();
             this.btn_Register_Register = new System.Windows.Forms.Button();
+            this.cb_ShowPassword_Register = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // lbl_TItle_Register
@@ -108,12 +109,25 @@ namespace FootballApp
             this.btn_Register_Register.TabIndex = 7;
             this.btn_Register_Register.Text = "Registrieren";
             this.btn_Register_Register.UseVisualStyleBackColor = true;
+            this.btn_Register_Register.Click += new System.EventHandler(this.btn_Register_Register_Click);
+            // 
+            // cb_ShowPassword_Register
+            // 
+            this.cb_ShowPassword_Register.AutoSize = true;
+            this.cb_ShowPassword_Register.Location = new System.Drawing.Point(43, 351);
+            this.cb_ShowPassword_Register.Name = "cb_ShowPassword_Register";
+            this.cb_ShowPassword_Register.Size = new System.Drawing.Size(115, 17);
+            this.cb_ShowPassword_Register.TabIndex = 8;
+            this.cb_ShowPassword_Register.Text = "Passwort anzeigen";
+            this.cb_ShowPassword_Register.UseVisualStyleBackColor = true;
+            this.cb_ShowPassword_Register.CheckedChanged += new System.EventHandler(this.cb_ShowPassword_Register_CheckedChanged);
             // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(301, 450);
+            this.Controls.Add(this.cb_ShowPassword_Register);
             this.Controls.Add(this.btn_Register_Register);
             this.Controls.Add(this.tb_PasswordConfirm_Register);
             this.Controls.Add(this.lbl_Passwordconfirm_Register);
@@ -124,7 +138,6 @@ namespace FootballApp
             this.Controls.Add(this.lbl_TItle_Register);
             this.Name = "Register";
             this.Text = "Register";
-            this.Load += new System.EventHandler(this.Register_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -140,5 +153,6 @@ namespace FootballApp
         private System.Windows.Forms.TextBox tb_PasswordConfirm_Register;
         private System.Windows.Forms.Label lbl_Passwordconfirm_Register;
         private System.Windows.Forms.Button btn_Register_Register;
+        private System.Windows.Forms.CheckBox cb_ShowPassword_Register;
     }
 }
