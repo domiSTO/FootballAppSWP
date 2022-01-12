@@ -16,5 +16,21 @@ namespace FootballApp
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            
+        }
+
+        private void Bundesliga_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

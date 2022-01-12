@@ -67,8 +67,17 @@ namespace FootballApp
             }
         }
 
+
+
         private void Login_Load(object sender, EventArgs e)
         {
+
+            if (cb_ShowPassword.Checked == false)
+            {
+                tb_Password_Login.UseSystemPasswordChar = true;
+                
+            }
+
             SQL_Connection.CreateDatabase("FootballApp");
             SQL_Connection.CreateTable("FootballApp", "Login");
         }
