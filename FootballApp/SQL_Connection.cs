@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
 using System.Windows.Forms;
+using DevOne.Security.Cryptography.BCrypt;
+
 
 namespace FootballApp
 {
@@ -43,7 +45,7 @@ namespace FootballApp
             try
             {
                 con.Open();
-                cmd.CommandText = "use [" + dbname + "] if not exists(select * from sysobjects where name = '" + tablename + "') begin create table " + tablename + "(Id int NOT NULL Primary Key,username varchar(20),password varchar(70)) end";
+                cmd.CommandText = "use [" + dbname + "] if not exists(select * from sysobjects where name = '" + tablename + "') begin create table " + tablename + "(Id int identity(1,1) primary Key,username varchar(20),password varchar(70)) end";
                 cmd.ExecuteNonQuery();
                 con.Close();
             }
@@ -56,17 +58,21 @@ namespace FootballApp
         //Login Check for the password
         public static void CheckTable(string tablename, string v_username, string v_password)
         {
-            string hashedpw;
+            string pw;
             try
             {
                 con.ConnectionString = @"Server=(localdb)\MSSQLLocalDB; Database=FootballApp";
                 con.Open();
                 cmd.CommandText = "Select password From Login Where username='" + v_username + "'";
-                hashedpw = (string)cmd.ExecuteScalar();
+                pw = (string)cmd.ExecuteScalar();
                 //hashedpw = v_password;
-                if (hashedpw != null)
+                string salt = BCryptHelper.GenerateSalt(6);
+                var passwordHash = BCryptHelper.HashPassword(pw, salt);
+
+                bool value = BCryptHelper.CheckPassword(pw, passwordHash);
+                if (passwordHash != null)
                 {
-                    if (BCrypt.CheckPassword(v_password, hashedpw))
+                    if (BCrypt.CheckPassword(pw, passwordHash))
                     {
                         MessageBox.Show("Sie haben sich erfolgreich angemeldet!", "Sie sind angemeldet!");
                     }

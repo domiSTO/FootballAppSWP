@@ -22,7 +22,7 @@ namespace FootballApp
             //Links to the BUndesliga Form
             Bundesliga bundesliga = new Bundesliga();
             bundesliga.Show();
-            this.Hide();
+            //this.Hide();
         }
 
         private void btn_PremierLeague_Click(object sender, EventArgs e)
@@ -91,6 +91,8 @@ namespace FootballApp
         {
             if (tb_DarkTheme.Checked)
             {
+
+
                 this.BackColor = Color.DimGray;
                 leagues_Title.ForeColor = Color.WhiteSmoke;
                 btn_Login.ForeColor = Color.WhiteSmoke;
@@ -119,6 +121,7 @@ namespace FootballApp
         {
             pb_LightMode.Show();
             pb_DarkMode.Hide();
+
         }
     }
 }

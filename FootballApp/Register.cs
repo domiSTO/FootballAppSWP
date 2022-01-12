@@ -51,5 +51,14 @@ namespace FootballApp
                 tb_PasswordConfirm_Register.UseSystemPasswordChar = true;
             }
         }
+
+        private void Register_Load(object sender, EventArgs e)
+        {
+            if(cb_ShowPassword_Register.Checked == false)
+            {
+                tb_Password_Register.UseSystemPasswordChar = true;
+                tb_PasswordConfirm_Register.UseSystemPasswordChar = true;
+            }
+        }
     }
 }

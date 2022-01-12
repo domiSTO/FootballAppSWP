@@ -40,6 +40,7 @@ namespace FootballApp
             this.lbl_LastGames_Bundesliga = new System.Windows.Forms.Label();
             this.lbl_Points_Bundesliga = new System.Windows.Forms.Label();
             this.lbl_Games_Bundesliga = new System.Windows.Forms.Label();
+            this.btn_back = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbl_Position_Bundesliga
@@ -141,11 +142,22 @@ namespace FootballApp
             this.lbl_Games_Bundesliga.TabIndex = 10;
             this.lbl_Games_Bundesliga.Text = "Spiele";
             // 
+            // btn_back
+            // 
+            this.btn_back.Location = new System.Drawing.Point(845, 415);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(75, 23);
+            this.btn_back.TabIndex = 11;
+            this.btn_back.Text = "Zurück";
+            this.btn_back.UseVisualStyleBackColor = true;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
+            // 
             // Bundesliga
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(932, 450);
+            this.Controls.Add(this.btn_back);
             this.Controls.Add(this.lbl_Games_Bundesliga);
             this.Controls.Add(this.lbl_LastGames_Bundesliga);
             this.Controls.Add(this.lbl_Points_Bundesliga);
@@ -159,6 +171,7 @@ namespace FootballApp
             this.Controls.Add(this.lbl_Position_Bundesliga);
             this.Name = "Bundesliga";
             this.Text = "Bundesliga";
+            this.Load += new System.EventHandler(this.Bundesliga_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -177,5 +190,6 @@ namespace FootballApp
         private System.Windows.Forms.Label lbl_LastGames_Bundesliga;
         private System.Windows.Forms.Label lbl_Points_Bundesliga;
         private System.Windows.Forms.Label lbl_Games_Bundesliga;
+        private System.Windows.Forms.Button btn_back;
     }
 }
