@@ -42,6 +42,7 @@ namespace FootballApp
             this.btn_Eredivisie_Darkmode = new System.Windows.Forms.Button();
             this.pb_LightMode = new System.Windows.Forms.PictureBox();
             this.pb_DarkMode = new System.Windows.Forms.PictureBox();
+            this.btn_addteams = new System.Windows.Forms.Button();
             this.tb_DarkTheme = new FootballApp.ToggleButton();
             ((System.ComponentModel.ISupportInitialize)(this.pb_LightMode)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_DarkMode)).BeginInit();
@@ -122,9 +123,9 @@ namespace FootballApp
             this.btn_Login.FlatAppearance.BorderSize = 2;
             this.btn_Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Login.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Login.Location = new System.Drawing.Point(641, 19);
+            this.btn_Login.Location = new System.Drawing.Point(690, 12);
             this.btn_Login.Name = "btn_Login";
-            this.btn_Login.Size = new System.Drawing.Size(107, 43);
+            this.btn_Login.Size = new System.Drawing.Size(107, 55);
             this.btn_Login.TabIndex = 6;
             this.btn_Login.Text = "Login";
             this.btn_Login.UseVisualStyleBackColor = true;
@@ -140,6 +141,7 @@ namespace FootballApp
             this.btn_Eredivisie.Size = new System.Drawing.Size(203, 194);
             this.btn_Eredivisie.TabIndex = 7;
             this.btn_Eredivisie.UseVisualStyleBackColor = true;
+            this.btn_Eredivisie.Click += new System.EventHandler(this.btn_Eredivisie_Click_1);
             // 
             // btn_Premierleague_Darkmode
             // 
@@ -185,6 +187,20 @@ namespace FootballApp
             this.pb_DarkMode.TabIndex = 12;
             this.pb_DarkMode.TabStop = false;
             // 
+            // btn_addteams
+            // 
+            this.btn_addteams.Enabled = false;
+            this.btn_addteams.FlatAppearance.BorderSize = 2;
+            this.btn_addteams.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_addteams.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_addteams.Location = new System.Drawing.Point(555, 12);
+            this.btn_addteams.Name = "btn_addteams";
+            this.btn_addteams.Size = new System.Drawing.Size(112, 55);
+            this.btn_addteams.TabIndex = 13;
+            this.btn_addteams.Text = "Teams hinzufügen";
+            this.btn_addteams.UseVisualStyleBackColor = true;
+            this.btn_addteams.Click += new System.EventHandler(this.btn_addteams_Click);
+            // 
             // tb_DarkTheme
             // 
             this.tb_DarkTheme.AutoSize = true;
@@ -206,6 +222,7 @@ namespace FootballApp
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(800, 583);
+            this.Controls.Add(this.btn_addteams);
             this.Controls.Add(this.pb_DarkMode);
             this.Controls.Add(this.pb_LightMode);
             this.Controls.Add(this.tb_DarkTheme);
@@ -237,13 +254,14 @@ namespace FootballApp
         private System.Windows.Forms.Button btn_Ligue1;
         private System.Windows.Forms.Button btn_SerieA;
         private System.Windows.Forms.Button btn_LaLiga;
-        private System.Windows.Forms.Button btn_Login;
         private System.Windows.Forms.Button btn_Eredivisie;
         private ToggleButton tb_DarkTheme;
         private System.Windows.Forms.Button btn_Premierleague_Darkmode;
         private System.Windows.Forms.Button btn_Eredivisie_Darkmode;
         private System.Windows.Forms.PictureBox pb_LightMode;
         private System.Windows.Forms.PictureBox pb_DarkMode;
+        public System.Windows.Forms.Button btn_Login;
+        public System.Windows.Forms.Button btn_addteams;
     }
 }
 

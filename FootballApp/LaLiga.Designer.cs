@@ -29,12 +29,33 @@ namespace FootballApp
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btn_back_ll = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btn_back_ll
+            // 
+            this.btn_back_ll.Location = new System.Drawing.Point(713, 415);
+            this.btn_back_ll.Name = "btn_back_ll";
+            this.btn_back_ll.Size = new System.Drawing.Size(75, 23);
+            this.btn_back_ll.TabIndex = 0;
+            this.btn_back_ll.Text = "Zurück";
+            this.btn_back_ll.UseVisualStyleBackColor = true;
+            this.btn_back_ll.Click += new System.EventHandler(this.btn_back_ll_Click);
+            // 
+            // LaLiga
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_back_ll);
+            this.Name = "LaLiga";
             this.Text = "LaLiga";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btn_back_ll;
     }
 }

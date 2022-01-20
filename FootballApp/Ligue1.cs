@@ -16,5 +16,10 @@ namespace FootballApp
         {
             InitializeComponent();
         }
+
+        private void btn_back_lig1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

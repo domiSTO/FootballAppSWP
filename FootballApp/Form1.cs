@@ -30,14 +30,12 @@ namespace FootballApp
             // links to the Premier League Form
             PremierLeague premierleague = new PremierLeague();
             premierleague.Show();
-            this.Hide();
         }
 
         private void btn_Premierleague_Darkmode_Click(object sender, EventArgs e)
         {
             PremierLeague premierleague = new PremierLeague();
             premierleague.Show();
-            this.Hide();
         }
 
         private void btn_Ligue1_Click(object sender, EventArgs e)
@@ -45,7 +43,6 @@ namespace FootballApp
             //links to the Ligue 1 Form
             Ligue1 ligue1 = new Ligue1();
             ligue1.Show();
-            this.Hide();
         }
 
         private void btn_SerieA_Click(object sender, EventArgs e)
@@ -53,7 +50,6 @@ namespace FootballApp
             //links to the Serie A Form
             SerieA seriea = new SerieA();
             seriea.Show();
-            this.Hide();
         }
 
         private void btn_LaLiga_Click(object sender, EventArgs e)
@@ -61,7 +57,6 @@ namespace FootballApp
             //links to the LaLiga Form
             LaLiga laliga = new LaLiga();
             laliga.Show();
-            this.Hide();
         }
 
         private void btn_Login_Click_1(object sender, EventArgs e)
@@ -70,6 +65,7 @@ namespace FootballApp
             Login login_start = new Login();
             login_start.Show();
             this.Hide();
+            
         }
 
         private void btn_Eredivisie_Click(object sender, EventArgs e)
@@ -77,14 +73,12 @@ namespace FootballApp
             //links to the Eredivisie Form
             Eredivisie eredivisie = new Eredivisie();
             eredivisie.Show();
-            this.Hide();
         }
 
         private void btn_Eredivisie_Darkmode_Click(object sender, EventArgs e)
         {
             Eredivisie eredivisie = new Eredivisie();
             eredivisie.Show();
-            this.Hide();
         }
 
         private void tb_DarkTheme_CheckedChanged(object sender, EventArgs e)
@@ -119,8 +113,30 @@ namespace FootballApp
 
         private void Frm_Leagues_Load(object sender, EventArgs e)
         {
+            SQL_Connection.CreateDatabase("FootballApp");
+            SQL_Connection.CreateTable("FootballApp", "Login");
+
+            SQL_Connection.CreateTable1("FootballApp", "Teams");
+            SQL_Connection.CreateTable2("FootballApp", "Ligen");
+
+            SQL_Connection.InsertLeagues("FootballApp", "Ligen");
+
+
             pb_LightMode.Show();
             pb_DarkMode.Hide();
+
+        }
+
+        private void btn_Eredivisie_Click_1(object sender, EventArgs e)
+        {
+            Eredivisie eredivisie = new Eredivisie();
+            eredivisie.Show();
+        }
+
+        private void btn_addteams_Click(object sender, EventArgs e)
+        {
+            AddTeams addteams = new AddTeams();
+            addteams.Show();
 
         }
     }

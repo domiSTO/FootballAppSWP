@@ -29,12 +29,33 @@ namespace FootballApp
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btn_back_serA = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btn_back_serA
+            // 
+            this.btn_back_serA.Location = new System.Drawing.Point(713, 415);
+            this.btn_back_serA.Name = "btn_back_serA";
+            this.btn_back_serA.Size = new System.Drawing.Size(75, 23);
+            this.btn_back_serA.TabIndex = 0;
+            this.btn_back_serA.Text = "zurück";
+            this.btn_back_serA.UseVisualStyleBackColor = true;
+            this.btn_back_serA.Click += new System.EventHandler(this.btn_back_serA_Click);
+            // 
+            // SerieA
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_back_serA);
+            this.Name = "SerieA";
             this.Text = "SerieA";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btn_back_serA;
     }
 }

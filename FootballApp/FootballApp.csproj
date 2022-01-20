@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddTeams.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTeams.Designer.cs">
+      <DependentUpon>AddTeams.cs</DependentUpon>
+    </Compile>
     <Compile Include="BCrypt.cs" />
     <Compile Include="Eredivisie.cs">
       <SubType>Form</SubType>
@@ -110,6 +116,18 @@
     <Compile Include="ToggleButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <EmbeddedResource Include="AddTeams.resx">
+      <DependentUpon>AddTeams.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eredivisie.resx">
+      <DependentUpon>Eredivisie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaLiga.resx">
+      <DependentUpon>LaLiga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ligue1.resx">
+      <DependentUpon>Ligue1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -118,6 +136,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PremierLeague.resx">
+      <DependentUpon>PremierLeague.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -130,6 +151,9 @@
     </Compile>
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SerieA.resx">
+      <DependentUpon>SerieA.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

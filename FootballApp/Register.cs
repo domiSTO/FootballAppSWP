@@ -31,6 +31,7 @@ namespace FootballApp
                 SQL_Connection.InsertInto("Login", tb_Username_Register.Text, hashedpw);
 
                 MessageBox.Show("Neuer Account wurde erstellt!", "Account erstellt!");
+                this.Close();
             }
             else
             {

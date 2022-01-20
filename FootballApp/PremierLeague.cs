@@ -16,5 +16,15 @@ namespace FootballApp
         {
             InitializeComponent();
         }
+
+        private void PremierLeague_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_back_pl_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -17,7 +17,7 @@ namespace FootballApp
         static SqlCommand cmd = new SqlCommand();
         private static SqlCommandBuilder cmdbuild = new SqlCommandBuilder();
 
-
+        #region DatabaseCheck
         //Creates Database if not exists
         public static void CreateDatabase(string dbname)
         {
@@ -39,7 +39,12 @@ namespace FootballApp
 
         }
 
+        #endregion
+
+        #region Tables
         //Creates Table if not exists
+
+        #region LoginTable
         public static void CreateTable(string dbname, string tablename)
         {
             try
@@ -54,9 +59,87 @@ namespace FootballApp
                 MessageBox.Show(e.Message);
             }
         }
+        #endregion
+        public static void CreateTable1(string dbname, string tablename)
+        {
+            try
+            {
+                con.Open();
+                cmd.CommandText = "use [" + dbname + "] if not exists(select * from sysobjects where name = '" + tablename + "') begin create table " + tablename + "(Id int identity(1,1) primary Key,teamname varchar(30),liganr int) end";
+                cmd.ExecuteNonQuery();
+                con.Close();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+        }
+
+        public static void CreateTable2(string dbname, string tablename)
+        {
+            try
+            {
+                con.Open();
+                cmd.CommandText = "use [" + dbname + "] if not exists(select * from sysobjects where name = '" + tablename + "') begin create table " + tablename + "(Id int identity(1,1) primary Key,liganame varchar(30), land varchar(20)) end";
+                cmd.ExecuteNonQuery();
+                con.Close();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+        }
+
+        #endregion
+
+        #region InsertLeagues
+        public static void InsertLeagues(string dbname, string tablename)
+        {
+            try
+            {
+                con.Open();
+                cmd.CommandText = "use [" + dbname + "] if not exists(select 1 from " + tablename + ") begin insert into " + tablename + " (liganame, land) values ('Bundesliga','Deutschland')," +
+                    "('Serie A','Italien')," +
+                    "('La Liga','Spanien')," +
+                    "('Ligue 1','Frankreich')," +
+                    "('Premier League','England')," +
+                    "('Eredevise','Niederlande') end";
+                cmd.ExecuteNonQuery();
+                con.Close();
+            }
+
+
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+        }
+
+        public static void InsertTeams(string dbname, string tablename, string teamname, int liganr)
+        {
+            try
+            {
+                con.Open();
+                cmd.CommandText = "use [" + dbname + "] if not exists(select 1 from " + tablename + " where teamname = '" + teamname + "') begin insert into " + tablename + " (teamname, liganr) values ('" + teamname + "'," + liganr + " ) end";
+                cmd.ExecuteNonQuery();
+                con.Close();
+                MessageBox.Show("Team erfolgreich hinzugefügt!");
+            }
+
+
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+        }
+
+
+        #endregion
+
+        #region LoginCheck
 
         //Login Check for the password
-        public static void CheckTable(string tablename, string v_username, string v_password)
+        public static bool CheckTable(string tablename, string v_username, string v_password)
         {
             string pw;
             try
@@ -75,17 +158,17 @@ namespace FootballApp
                     if (BCrypt.CheckPassword(pw, passwordHash))
                     {
                         MessageBox.Show("Sie haben sich erfolgreich angemeldet!", "Sie sind angemeldet!");
-                    }
-                    else
-                    {
-                        MessageBox.Show("Passwort stimmt nicht überein!", "Falsches Passwort!");
+                        
                     }
                 }
                 con.Close();
+                return true;
             }
-            catch (Exception e)
+            catch
             {
-                MessageBox.Show(e.Message);
+                MessageBox.Show("Passwort oder User falsch!", "Ungültige Eingaben");
+                con.Close();
+                return false;
             }
         }
 
@@ -106,6 +189,10 @@ namespace FootballApp
                 MessageBox.Show(e.Message);
             }
         }
+
+        #endregion
+
+
     }
     
 }

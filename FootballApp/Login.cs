@@ -26,24 +26,35 @@ namespace FootballApp
 
         private void btn_Login_Login_Click(object sender, EventArgs e)
         {
-            //Checking if the Textboxes are filled in correctly and if not it displasy a reminder
+            //Checking if the Textboxes are filled in correctly and if not it displays a reminder
             if(tb_Username_Login.Text.Equals("") || tb_Password_Login.Text.Equals(""))
             {
                 MessageBox.Show("Ungültige Eingabe! Bitte überprüfen!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else if(!tb_Username_Login.Text.Equals("") && !tb_Password_Login.Text.Equals(""))
             {
-                MessageBox.Show("Erfolgreich angemeldet","Erfolgreich", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if(SQL_Connection.CheckTable("Login", tb_Username_Login.Text, tb_Password_Login.Text))
+                {
+                    Frm_Leagues leagues = new Frm_Leagues();
+                    leagues.btn_Login.Enabled = false;
+                    leagues.btn_addteams.Enabled = true;
+                    leagues.btn_Login.Text = "Eingeloggt";
+                  
+                    leagues.Show();
+
+                    this.Hide();
+                    this.Close();
+                }
+                //MessageBox.Show("Erfolgreich angemeldet","Erfolgreich", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                
+                
             }
 
-            SQL_Connection.CheckTable("Login", tb_Username_Login.Text, tb_Password_Login.Text);
+            
 
-            Environment.Exit(0);
+            
 
-            Frm_Leagues leagues = new Frm_Leagues();
-            leagues.Show();
-            this.Hide();
-            this.Close();
+            
         }
 
         private void btn_Back_Login_Click(object sender, EventArgs e)
@@ -78,8 +89,7 @@ namespace FootballApp
                 
             }
 
-            SQL_Connection.CreateDatabase("FootballApp");
-            SQL_Connection.CreateTable("FootballApp", "Login");
+            
         }
     }
 }
