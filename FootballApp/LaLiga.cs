@@ -21,5 +21,10 @@ namespace FootballApp
         {
             this.Close();
         }
+
+        private void LaLiga_Load(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = SQL_Connection.CheckDataGrid(3, "FootballApp");
+        }
     }
 }

@@ -19,7 +19,7 @@ namespace FootballApp
 
         private void PremierLeague_Load(object sender, EventArgs e)
         {
-
+            dataGridView1.DataSource = SQL_Connection.CheckDataGrid(5, "FootballApp");
         }
 
         private void btn_back_pl_Click(object sender, EventArgs e)

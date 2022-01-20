@@ -30,7 +30,7 @@ namespace FootballApp
 
         private void Bundesliga_Load(object sender, EventArgs e)
         {
-
+            dataGridView1.DataSource = SQL_Connection.CheckDataGrid(1, "FootballApp");
         }
     }
 }

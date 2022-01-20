@@ -21,5 +21,10 @@ namespace FootballApp
         {
             this.Hide();
         }
+
+        private void Eredivisie_Load(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = SQL_Connection.CheckDataGrid(6, "FootballApp");
+        }
     }
 }

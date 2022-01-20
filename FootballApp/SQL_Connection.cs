@@ -65,7 +65,7 @@ namespace FootballApp
             try
             {
                 con.Open();
-                cmd.CommandText = "use [" + dbname + "] if not exists(select * from sysobjects where name = '" + tablename + "') begin create table " + tablename + "(Id int identity(1,1) primary Key,teamname varchar(30),liganr int) end";
+                cmd.CommandText = "use [" + dbname + "] if not exists(select * from sysobjects where name = '" + tablename + "') begin create table " + tablename + "(Id int identity(1,1) primary Key,teamname varchar(30),liganr int, tore int, gegentore int, spiele int) end";
                 cmd.ExecuteNonQuery();
                 con.Close();
             }
@@ -120,7 +120,7 @@ namespace FootballApp
             try
             {
                 con.Open();
-                cmd.CommandText = "use [" + dbname + "] if not exists(select 1 from " + tablename + " where teamname = '" + teamname + "') begin insert into " + tablename + " (teamname, liganr) values ('" + teamname + "'," + liganr + " ) end";
+                cmd.CommandText = "use [" + dbname + "] if not exists(select 1 from " + tablename + " where teamname = '" + teamname + "') begin insert into " + tablename + " (teamname, liganr, tore, gegentore, spiele) values ('" + teamname + "'," + liganr + ", 0, 0, 0 ) end";
                 cmd.ExecuteNonQuery();
                 con.Close();
                 MessageBox.Show("Team erfolgreich hinzugefügt!");
@@ -192,7 +192,21 @@ namespace FootballApp
 
         #endregion
 
+        #region DataGridView
+
+        public static DataTable CheckDataGrid(int liganr, string dbname)
+        {
+
+            con.Open();
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter("use [" + dbname + "] select * from Teams where liganr = " + liganr + "", con);
+            DataTable dataTable = new DataTable();
+            sqlDataAdapter.Fill(dataTable);
+
+            return dataTable;
+        }
+        #endregion
+
 
     }
-    
+
 }
