@@ -201,6 +201,7 @@ namespace FootballApp
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter("use [" + dbname + "] select * from Teams where liganr = " + liganr + "", con);
             DataTable dataTable = new DataTable();
             sqlDataAdapter.Fill(dataTable);
+            con.Close();
 
             return dataTable;
         }
