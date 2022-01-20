@@ -37,6 +37,7 @@ namespace FootballApp
             this.Tore = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Gegentore = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Spiele = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lbl_eredevise = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -103,11 +104,22 @@ namespace FootballApp
             this.Spiele.HeaderText = "Spiele";
             this.Spiele.Name = "Spiele";
             // 
+            // lbl_eredevise
+            // 
+            this.lbl_eredevise.AutoSize = true;
+            this.lbl_eredevise.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_eredevise.Location = new System.Drawing.Point(343, 6);
+            this.lbl_eredevise.Name = "lbl_eredevise";
+            this.lbl_eredevise.Size = new System.Drawing.Size(104, 24);
+            this.lbl_eredevise.TabIndex = 3;
+            this.lbl_eredevise.Text = "Eredevise";
+            // 
             // Eredivisie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbl_eredevise);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btn_back_er);
             this.Name = "Eredivisie";
@@ -115,6 +127,7 @@ namespace FootballApp
             this.Load += new System.EventHandler(this.Eredivisie_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -128,5 +141,6 @@ namespace FootballApp
         private System.Windows.Forms.DataGridViewTextBoxColumn Tore;
         private System.Windows.Forms.DataGridViewTextBoxColumn Gegentore;
         private System.Windows.Forms.DataGridViewTextBoxColumn Spiele;
+        private System.Windows.Forms.Label lbl_eredevise;
     }
 }

@@ -37,6 +37,7 @@ namespace FootballApp
             this.Tore = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Gegentore = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Spiele = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lbl_premierleague = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -103,11 +104,22 @@ namespace FootballApp
             this.Spiele.HeaderText = "Spiele";
             this.Spiele.Name = "Spiele";
             // 
+            // lbl_premierleague
+            // 
+            this.lbl_premierleague.AutoSize = true;
+            this.lbl_premierleague.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_premierleague.Location = new System.Drawing.Point(326, 6);
+            this.lbl_premierleague.Name = "lbl_premierleague";
+            this.lbl_premierleague.Size = new System.Drawing.Size(159, 24);
+            this.lbl_premierleague.TabIndex = 3;
+            this.lbl_premierleague.Text = "Premier League";
+            // 
             // PremierLeague
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbl_premierleague);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btn_back_pl);
             this.Name = "PremierLeague";
@@ -115,6 +127,7 @@ namespace FootballApp
             this.Load += new System.EventHandler(this.PremierLeague_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -128,5 +141,6 @@ namespace FootballApp
         private System.Windows.Forms.DataGridViewTextBoxColumn Tore;
         private System.Windows.Forms.DataGridViewTextBoxColumn Gegentore;
         private System.Windows.Forms.DataGridViewTextBoxColumn Spiele;
+        private System.Windows.Forms.Label lbl_premierleague;
     }
 }
