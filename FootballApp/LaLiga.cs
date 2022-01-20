@@ -24,6 +24,7 @@ namespace FootballApp
 
         private void LaLiga_Load(object sender, EventArgs e)
         {
+            //Create a DataGridView with SQL-Connection for the Standings
             dataGridView1.DataSource = SQL_Connection.CheckDataGrid(3, "FootballApp");
         }
     }

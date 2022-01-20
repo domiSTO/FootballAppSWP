@@ -19,6 +19,7 @@ namespace FootballApp
 
         private void PremierLeague_Load(object sender, EventArgs e)
         {
+            //Create a DataGridView with SQL-Connection for the Standings
             dataGridView1.DataSource = SQL_Connection.CheckDataGrid(5, "FootballApp");
         }
 

@@ -30,6 +30,7 @@ namespace FootballApp
 
         private void Bundesliga_Load(object sender, EventArgs e)
         {
+            //Create a DataGridView with SQL-Connection for the Standings
             dataGridView1.DataSource = SQL_Connection.CheckDataGrid(1, "FootballApp");
         }
     }

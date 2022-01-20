@@ -45,7 +45,6 @@ namespace FootballApp
                     this.Hide();
                     this.Close();
                 }
-                //MessageBox.Show("Erfolgreich angemeldet","Erfolgreich", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 
                 
             }
@@ -68,6 +67,7 @@ namespace FootballApp
 
         private void cb_ShowPassword_CheckedChanged(object sender, EventArgs e)
         {
+            //Handles Visible/invisible Password
             if (cb_ShowPassword.Checked == true)
             {
                 tb_Password_Login.UseSystemPasswordChar = false;
@@ -82,7 +82,7 @@ namespace FootballApp
 
         private void Login_Load(object sender, EventArgs e)
         {
-
+            //Handles Visisble/Invisible Password
             if (cb_ShowPassword.Checked == false)
             {
                 tb_Password_Login.UseSystemPasswordChar = true;

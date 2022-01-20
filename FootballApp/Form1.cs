@@ -83,6 +83,7 @@ namespace FootballApp
 
         private void tb_DarkTheme_CheckedChanged(object sender, EventArgs e)
         {
+            //Changes Pictures according to selected Mode (White/Dark)
             if (tb_DarkTheme.Checked)
             {
 
@@ -113,6 +114,7 @@ namespace FootballApp
 
         private void Frm_Leagues_Load(object sender, EventArgs e)
         {
+            // Create Database and Tables with SQL-Connection
             SQL_Connection.CreateDatabase("FootballApp");
             SQL_Connection.CreateTable("FootballApp", "Login");
 

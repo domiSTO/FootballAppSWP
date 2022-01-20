@@ -24,10 +24,11 @@ namespace FootballApp
 
         private void a_Click(object sender, EventArgs e)
         {
+            // Saves the selected Ligue into a int
             int liganr = comboBox1.SelectedIndex + 1;
 
             
-
+            // Create a new Team and give it a League
             SQL_Connection.InsertTeams("FootballApp", "Teams", txtbox_teamname.Text, liganr);
         }
 

@@ -19,6 +19,7 @@ namespace FootballApp
 
         private void btn_Register_Register_Click(object sender, EventArgs e)
         {
+            //RegisterCheck with BCrypt-Class
             string salt;
             string hashedpw;
 
@@ -41,6 +42,7 @@ namespace FootballApp
 
         private void cb_ShowPassword_Register_CheckedChanged(object sender, EventArgs e)
         {
+            //Handles the Visible/Invisible Password
             if (cb_ShowPassword_Register.Checked == true)
             {
                 tb_Password_Register.UseSystemPasswordChar = false;
@@ -55,6 +57,7 @@ namespace FootballApp
 
         private void Register_Load(object sender, EventArgs e)
         {
+            // Handles the Visible/Invisible Password
             if(cb_ShowPassword_Register.Checked == false)
             {
                 tb_Password_Register.UseSystemPasswordChar = true;
