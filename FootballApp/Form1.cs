@@ -139,5 +139,10 @@ namespace FootballApp
             addteams.Show();
 
         }
+
+        private void Frm_Leagues_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
