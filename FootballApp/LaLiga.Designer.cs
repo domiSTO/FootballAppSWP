@@ -38,6 +38,7 @@ namespace FootballApp
             this.Gegentore = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Spiele = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lbl_laliga = new System.Windows.Forms.Label();
+            this.flp_LaLiga = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,9 +62,9 @@ namespace FootballApp
             this.Tore,
             this.Gegentore,
             this.Spiele});
-            this.dataGridView1.Location = new System.Drawing.Point(178, 33);
+            this.dataGridView1.Location = new System.Drawing.Point(768, 386);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(444, 384);
+            this.dataGridView1.Size = new System.Drawing.Size(20, 23);
             this.dataGridView1.TabIndex = 2;
             // 
             // ID
@@ -114,11 +115,19 @@ namespace FootballApp
             this.lbl_laliga.TabIndex = 3;
             this.lbl_laliga.Text = "La Liga";
             // 
+            // flp_LaLiga
+            // 
+            this.flp_LaLiga.Location = new System.Drawing.Point(35, 41);
+            this.flp_LaLiga.Name = "flp_LaLiga";
+            this.flp_LaLiga.Size = new System.Drawing.Size(701, 368);
+            this.flp_LaLiga.TabIndex = 5;
+            // 
             // LaLiga
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.flp_LaLiga);
             this.Controls.Add(this.lbl_laliga);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btn_back_ll);
@@ -142,5 +151,6 @@ namespace FootballApp
         private System.Windows.Forms.DataGridViewTextBoxColumn Gegentore;
         private System.Windows.Forms.DataGridViewTextBoxColumn Spiele;
         private System.Windows.Forms.Label lbl_laliga;
+        private System.Windows.Forms.FlowLayoutPanel flp_LaLiga;
     }
 }

@@ -28,5 +28,22 @@ namespace FootballApp
             dataGridView1.DataSource = SQL_Connection.CheckDataGrid(4, "FootballApp");
 
         }
+
+        public void Bgenerate(Properties.Resources res)
+        {
+            for (int i = 1; i < 21; i++)
+            {
+                Button b = new Button();
+                b.BackgroundImage = res;
+                b.Name = "btn_Ligue1" + i;
+                b.Width = flp_Ligue1.Width / 6;
+                b.Height = 70;
+                b.FlatStyle = FlatStyle.Flat;
+                b.FlatAppearance.BorderSize = 0;
+                b.Margin = new Padding(0);
+                flp_Ligue1.Controls.Add(b);
+            }
+
+        }
     }
 }

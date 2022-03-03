@@ -81,6 +81,19 @@ namespace FootballApp
             eredivisie.Show();
         }
 
+        private void btn_Eredivisie_Click_1(object sender, EventArgs e)
+        {
+            Eredivisie eredivisie = new Eredivisie();
+            eredivisie.Show();
+        }
+
+        private void btn_addteams_Click(object sender, EventArgs e)
+        {
+            AddTeams addteams = new AddTeams();
+            addteams.Show();
+
+        }
+
         private void tb_DarkTheme_CheckedChanged(object sender, EventArgs e)
         {
             //Changes Pictures according to selected Mode (White/Dark)
@@ -91,6 +104,7 @@ namespace FootballApp
                 this.BackColor = Color.DimGray;
                 leagues_Title.ForeColor = Color.WhiteSmoke;
                 btn_Login.ForeColor = Color.WhiteSmoke;
+                btn_addteams.ForeColor = Color.WhiteSmoke;
                 btn_Premierleague_Darkmode.Show();
                 btn_PremierLeague.Hide();
                 btn_Eredivisie_Darkmode.Show();
@@ -103,6 +117,7 @@ namespace FootballApp
                 this.BackColor = Color.WhiteSmoke;
                 leagues_Title.ForeColor = Color.Black;
                 btn_Login.ForeColor = Color.Black;
+                btn_addteams.ForeColor = Color.Black;
                 btn_Premierleague_Darkmode.Hide();
                 btn_PremierLeague.Show();
                 btn_Eredivisie_Darkmode.Hide();
@@ -126,19 +141,6 @@ namespace FootballApp
 
             pb_LightMode.Show();
             pb_DarkMode.Hide();
-
-        }
-
-        private void btn_Eredivisie_Click_1(object sender, EventArgs e)
-        {
-            Eredivisie eredivisie = new Eredivisie();
-            eredivisie.Show();
-        }
-
-        private void btn_addteams_Click(object sender, EventArgs e)
-        {
-            AddTeams addteams = new AddTeams();
-            addteams.Show();
 
         }
 

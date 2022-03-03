@@ -38,6 +38,7 @@ namespace FootballApp
             this.Gegentore = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Spiele = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lbl_seriea = new System.Windows.Forms.Label();
+            this.flp_SerieA = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,9 +62,9 @@ namespace FootballApp
             this.Tore,
             this.Gegentore,
             this.Spiele});
-            this.dataGridView1.Location = new System.Drawing.Point(178, 33);
+            this.dataGridView1.Location = new System.Drawing.Point(769, 390);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(444, 384);
+            this.dataGridView1.Size = new System.Drawing.Size(19, 19);
             this.dataGridView1.TabIndex = 2;
             // 
             // ID
@@ -114,11 +115,19 @@ namespace FootballApp
             this.lbl_seriea.TabIndex = 3;
             this.lbl_seriea.Text = "Serie A";
             // 
+            // flp_SerieA
+            // 
+            this.flp_SerieA.Location = new System.Drawing.Point(31, 41);
+            this.flp_SerieA.Name = "flp_SerieA";
+            this.flp_SerieA.Size = new System.Drawing.Size(701, 368);
+            this.flp_SerieA.TabIndex = 5;
+            // 
             // SerieA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.flp_SerieA);
             this.Controls.Add(this.lbl_seriea);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btn_back_serA);
@@ -142,5 +151,6 @@ namespace FootballApp
         private System.Windows.Forms.DataGridViewTextBoxColumn Gegentore;
         private System.Windows.Forms.DataGridViewTextBoxColumn Spiele;
         private System.Windows.Forms.Label lbl_seriea;
+        private System.Windows.Forms.FlowLayoutPanel flp_SerieA;
     }
 }

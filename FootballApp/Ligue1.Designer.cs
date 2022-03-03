@@ -31,13 +31,14 @@ namespace FootballApp
         {
             this.btn_back_lig1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.lbl_ligue1 = new System.Windows.Forms.Label();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Teamname = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Liganr = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tore = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Gegentore = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Spiele = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lbl_ligue1 = new System.Windows.Forms.Label();
+            this.flp_Ligue1 = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,20 +62,10 @@ namespace FootballApp
             this.Tore,
             this.Gegentore,
             this.Spiele});
-            this.dataGridView1.Location = new System.Drawing.Point(162, 54);
+            this.dataGridView1.Location = new System.Drawing.Point(765, 386);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(444, 384);
+            this.dataGridView1.Size = new System.Drawing.Size(23, 23);
             this.dataGridView1.TabIndex = 1;
-            // 
-            // lbl_ligue1
-            // 
-            this.lbl_ligue1.AutoSize = true;
-            this.lbl_ligue1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_ligue1.Location = new System.Drawing.Point(345, 13);
-            this.lbl_ligue1.Name = "lbl_ligue1";
-            this.lbl_ligue1.Size = new System.Drawing.Size(79, 24);
-            this.lbl_ligue1.TabIndex = 2;
-            this.lbl_ligue1.Text = "Ligue 1";
             // 
             // ID
             // 
@@ -114,11 +105,29 @@ namespace FootballApp
             this.Spiele.HeaderText = "Spiele";
             this.Spiele.Name = "Spiele";
             // 
+            // lbl_ligue1
+            // 
+            this.lbl_ligue1.AutoSize = true;
+            this.lbl_ligue1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_ligue1.Location = new System.Drawing.Point(345, 13);
+            this.lbl_ligue1.Name = "lbl_ligue1";
+            this.lbl_ligue1.Size = new System.Drawing.Size(79, 24);
+            this.lbl_ligue1.TabIndex = 2;
+            this.lbl_ligue1.Text = "Ligue 1";
+            // 
+            // flp_Ligue1
+            // 
+            this.flp_Ligue1.Location = new System.Drawing.Point(28, 41);
+            this.flp_Ligue1.Name = "flp_Ligue1";
+            this.flp_Ligue1.Size = new System.Drawing.Size(701, 368);
+            this.flp_Ligue1.TabIndex = 5;
+            // 
             // Ligue1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.flp_Ligue1);
             this.Controls.Add(this.lbl_ligue1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btn_back_lig1);
@@ -142,5 +151,6 @@ namespace FootballApp
         private System.Windows.Forms.DataGridViewTextBoxColumn Tore;
         private System.Windows.Forms.DataGridViewTextBoxColumn Gegentore;
         private System.Windows.Forms.DataGridViewTextBoxColumn Spiele;
+        private System.Windows.Forms.FlowLayoutPanel flp_Ligue1;
     }
 }
