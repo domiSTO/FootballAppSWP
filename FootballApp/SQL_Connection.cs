@@ -194,17 +194,17 @@ namespace FootballApp
 
         #region DataGridView
 
-        public static DataTable CheckDataGrid(int liganr, string dbname)
-        {
+        //public static DataTable CheckDataGrid(int liganr, string dbname)
+        //{
 
-            con.Open();
-            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter("use [" + dbname + "] select * from Teams where liganr = " + liganr + "", con);
-            DataTable dataTable = new DataTable();
-            sqlDataAdapter.Fill(dataTable);
-            con.Close();
+        //    con.Open();
+        //    SqlDataAdapter sqlDataAdapter = new SqlDataAdapter("use [" + dbname + "] select * from Teams where liganr = " + liganr + "", con);
+        //    DataTable dataTable = new DataTable();
+        //    sqlDataAdapter.Fill(dataTable);
+        //    con.Close();
 
-            return dataTable;
-        }
+        //    return dataTable;
+        //}
         #endregion
 
 

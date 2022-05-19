@@ -148,6 +148,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
@@ -168,6 +169,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Bayern.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Ajax.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\ACMilan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\ManCity.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Paris.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Real Madrid.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

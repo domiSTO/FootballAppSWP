@@ -30,25 +30,31 @@ namespace FootballApp
 
         private void Bundesliga_Load(object sender, EventArgs e)
         {
+            btn_Teams_Bayern.Image = FootballApp.Properties.Resources.Bayern;
             //Create a DataGridView with SQL-Connection for the Standings
-            dataGridView1.DataSource = SQL_Connection.CheckDataGrid(1, "FootballApp");
+           // dataGridView1.DataSource = SQL_Connection.CheckDataGrid(1, "FootballApp");
         }
 
-        public void Bgenerate(Properties.Resources res)
-        {
-            for (int i = 1; i < 19; i++)
-            {
-                Button b = new Button();
-                b.BackgroundImage = res;
-                b.Name = "btn_Bundesliga" + i;
-                b.Width = flp_Bundesliga.Width / 6;
-                b.Height = 70;
-                b.FlatStyle = FlatStyle.Flat;
-                b.FlatAppearance.BorderSize = 0;
-                b.Margin = new Padding(0);
-                flp_Bundesliga.Controls.Add(b);
-            }
+        //public void Bgenerate(Properties.Resources res)
+        //{
+        //    for (int i = 1; i < 19; i++)
+        //    {
+        //        Button b = new Button();
+        //        b.BackgroundImage = res;
+        //        b.Name = "btn_Bundesliga" + i;
+        //        b.Width = flp_Bundesliga.Width / 6;
+        //        b.Height = 70;
+        //        b.FlatStyle = FlatStyle.Flat;
+        //        b.FlatAppearance.BorderSize = 0;
+        //        b.Margin = new Padding(0);
+        //        flp_Bundesliga.Controls.Add(b);
+        //    }
 
+        //}
+
+        private void btn_Teams_Bayern_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
