@@ -188,5 +188,11 @@
   <ItemGroup>
     <None Include="Properties\Real Madrid.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Star_unfilled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Star_filled.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

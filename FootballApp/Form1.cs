@@ -104,7 +104,7 @@ namespace FootballApp
                 this.BackColor = Color.DimGray;
                 leagues_Title.ForeColor = Color.WhiteSmoke;
                 btn_Login.ForeColor = Color.WhiteSmoke;
-                btn_addteams.ForeColor = Color.WhiteSmoke;
+                
                 btn_Premierleague_Darkmode.Show();
                 btn_PremierLeague.Hide();
                 btn_Eredivisie_Darkmode.Show();
@@ -117,7 +117,7 @@ namespace FootballApp
                 this.BackColor = Color.WhiteSmoke;
                 leagues_Title.ForeColor = Color.Black;
                 btn_Login.ForeColor = Color.Black;
-                btn_addteams.ForeColor = Color.Black;
+               
                 btn_Premierleague_Darkmode.Hide();
                 btn_PremierLeague.Show();
                 btn_Eredivisie_Darkmode.Hide();
@@ -147,6 +147,18 @@ namespace FootballApp
         private void Frm_Leagues_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            pbbox_starunfilled.Hide();
+            pbbox_filled.Show();
+        }
+
+        private void pbbox_filled_Click(object sender, EventArgs e)
+        {
+            pbbox_filled.Hide();
+            pbbox_starunfilled.Show();
         }
     }
 }

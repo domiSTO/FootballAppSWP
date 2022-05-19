@@ -37,7 +37,7 @@ namespace FootballApp
                 {
                     Frm_Leagues leagues = new Frm_Leagues();
                     leagues.btn_Login.Enabled = false;
-                    leagues.btn_addteams.Enabled = true;
+                    
                     leagues.btn_Login.Text = "Eingeloggt";
                   
                     leagues.Show();

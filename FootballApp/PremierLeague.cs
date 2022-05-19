@@ -23,22 +23,22 @@ namespace FootballApp
             
         }
 
-        public void Bgenerate(Properties.Resources res)
-        {
-            for (int i = 1; i < 21; i++)
-            {
-                Button b = new Button();
-                b.BackgroundImage = res;
-                b.Name = "btn_PremierLeague" + i;
-                b.Width = flp_PremierLeague.Width / 6;
-                b.Height = 70;
-                b.FlatStyle = FlatStyle.Flat;
-                b.FlatAppearance.BorderSize = 0;
-                b.Margin = new Padding(0);
-                flp_PremierLeague.Controls.Add(b);
-            }
+        //public void Bgenerate(Properties.Resources res)
+        //{
+        //    for (int i = 1; i < 21; i++)
+        //    {
+        //        Button b = new Button();
+        //        b.BackgroundImage = res;
+        //        b.Name = "btn_PremierLeague" + i;
+        //        b.Width = flp_PremierLeague.Width / 6;
+        //        b.Height = 70;
+        //        b.FlatStyle = FlatStyle.Flat;
+        //        b.FlatAppearance.BorderSize = 0;
+        //        b.Margin = new Padding(0);
+        //        flp_PremierLeague.Controls.Add(b);
+        //    }
 
-        }
+        //}
 
         private void btn_back_pl_Click(object sender, EventArgs e)
         {

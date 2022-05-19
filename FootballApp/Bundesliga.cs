@@ -30,9 +30,15 @@ namespace FootballApp
 
         private void Bundesliga_Load(object sender, EventArgs e)
         {
-            btn_Teams_Bayern.Image = FootballApp.Properties.Resources.Bayern;
+            
+            //Fullscreen without Taskbar
+            //this.TopMost = true;
+            //this.FormBorderStyle = FormBorderStyle.FixedDialog;
+            //this.WindowState = FormWindowState.Maximized;
+
+
             //Create a DataGridView with SQL-Connection for the Standings
-           // dataGridView1.DataSource = SQL_Connection.CheckDataGrid(1, "FootballApp");
+            // dataGridView1.DataSource = SQL_Connection.CheckDataGrid(1, "FootballApp");
         }
 
         //public void Bgenerate(Properties.Resources res)
