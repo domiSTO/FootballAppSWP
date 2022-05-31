@@ -24,8 +24,36 @@ namespace FootballApp
 
         private void LaLiga_Load(object sender, EventArgs e)
         {
-            //Create a DataGridView with SQL-Connection for the Standings
-            dataGridView1.DataSource = SQL_Connection.CheckDataGrid(3, "FootballApp");
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+
+            int count = 1;
+            int index = 0;
+            Point newLocation = new Point(20, 35);
+
+            for (int i = 0; i < 1; i++)
+            {
+
+
+                Button btn = new Button();
+                btn.Name = count.ToString();
+                btn.Size = new Size(100, 100);
+                btn.Location = newLocation;
+                btn.FlatAppearance.BorderSize = 0;
+                btn.FlatStyle = FlatStyle.Flat;
+                btn.Image = imageList1.Images[index];
+
+                newLocation.Offset(btn.Width + 10, 0);
+                if (newLocation.X >= 750)
+                {
+                    newLocation.Offset(-newLocation.X + 20, 110);
+                }
+
+                count++;
+                index++;
+                Controls.Add(btn);
+            }
         }
     }
 }

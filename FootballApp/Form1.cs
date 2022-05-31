@@ -114,6 +114,10 @@ namespace FootballApp
 
         private void Frm_Leagues_Load(object sender, EventArgs e)
         {
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+
             // Create Database and Tables with SQL-Connection
             SQL_Connection.CreateDatabase("FootballApp");
             SQL_Connection.CreateTable("FootballApp", "Login");
@@ -137,7 +141,7 @@ namespace FootballApp
 
         private void btn_addteams_Click(object sender, EventArgs e)
         {
-            AddTeams addteams = new AddTeams();
+            Favoriten addteams = new Favoriten();
             addteams.Show();
 
         }

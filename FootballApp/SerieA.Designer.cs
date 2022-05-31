@@ -29,16 +29,11 @@ namespace FootballApp
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SerieA));
             this.btn_back_serA = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Teamname = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Liganr = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tore = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Gegentore = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Spiele = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lbl_seriea = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.SuspendLayout();
             // 
             // btn_back_serA
@@ -51,59 +46,6 @@ namespace FootballApp
             this.btn_back_serA.UseVisualStyleBackColor = true;
             this.btn_back_serA.Click += new System.EventHandler(this.btn_back_serA_Click);
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ID,
-            this.Teamname,
-            this.Liganr,
-            this.Tore,
-            this.Gegentore,
-            this.Spiele});
-            this.dataGridView1.Location = new System.Drawing.Point(178, 33);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(444, 384);
-            this.dataGridView1.TabIndex = 2;
-            // 
-            // ID
-            // 
-            this.ID.DataPropertyName = "Id";
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
-            this.ID.Visible = false;
-            // 
-            // Teamname
-            // 
-            this.Teamname.DataPropertyName = "teamname";
-            this.Teamname.HeaderText = "Team";
-            this.Teamname.Name = "Teamname";
-            // 
-            // Liganr
-            // 
-            this.Liganr.DataPropertyName = "liganr";
-            this.Liganr.HeaderText = "Liga";
-            this.Liganr.Name = "Liganr";
-            this.Liganr.Visible = false;
-            // 
-            // Tore
-            // 
-            this.Tore.DataPropertyName = "tore";
-            this.Tore.HeaderText = "Tore";
-            this.Tore.Name = "Tore";
-            // 
-            // Gegentore
-            // 
-            this.Gegentore.DataPropertyName = "gegentore";
-            this.Gegentore.HeaderText = "Gegentore";
-            this.Gegentore.Name = "Gegentore";
-            // 
-            // Spiele
-            // 
-            this.Spiele.DataPropertyName = "spiele";
-            this.Spiele.HeaderText = "Spiele";
-            this.Spiele.Name = "Spiele";
-            // 
             // lbl_seriea
             // 
             this.lbl_seriea.AutoSize = true;
@@ -114,18 +56,22 @@ namespace FootballApp
             this.lbl_seriea.TabIndex = 3;
             this.lbl_seriea.Text = "Serie A";
             // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "Milan.png");
+            // 
             // SerieA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lbl_seriea);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btn_back_serA);
             this.Name = "SerieA";
             this.Text = "SerieA";
             this.Load += new System.EventHandler(this.SerieA_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -134,13 +80,7 @@ namespace FootballApp
         #endregion
 
         private System.Windows.Forms.Button btn_back_serA;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Teamname;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Liganr;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Tore;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Gegentore;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Spiele;
         private System.Windows.Forms.Label lbl_seriea;
+        private System.Windows.Forms.ImageList imageList1;
     }
 }

@@ -54,9 +54,9 @@ namespace FootballApp
             this.leagues_Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.leagues_Title.Location = new System.Drawing.Point(243, 31);
             this.leagues_Title.Name = "leagues_Title";
-            this.leagues_Title.Size = new System.Drawing.Size(281, 31);
+            this.leagues_Title.Size = new System.Drawing.Size(283, 31);
             this.leagues_Title.TabIndex = 0;
-            this.leagues_Title.Text = "Wählen Sie ihre Liga";
+            this.leagues_Title.Text = "Wählen Sie Ihre Liga";
             // 
             // btn_Bundesliga
             // 
@@ -197,7 +197,7 @@ namespace FootballApp
             this.btn_addteams.Name = "btn_addteams";
             this.btn_addteams.Size = new System.Drawing.Size(112, 55);
             this.btn_addteams.TabIndex = 13;
-            this.btn_addteams.Text = "Teams hinzufügen";
+            this.btn_addteams.Text = "Favoriten";
             this.btn_addteams.UseVisualStyleBackColor = true;
             this.btn_addteams.Click += new System.EventHandler(this.btn_addteams_Click);
             // 

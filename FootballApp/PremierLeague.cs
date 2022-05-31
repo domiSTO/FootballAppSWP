@@ -19,13 +19,64 @@ namespace FootballApp
 
         private void PremierLeague_Load(object sender, EventArgs e)
         {
-            //Create a DataGridView with SQL-Connection for the Standings
-            dataGridView1.DataSource = SQL_Connection.CheckDataGrid(5, "FootballApp");
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+
+            int count = 1;
+            int index = 0;
+            int X = 0;
+            int Y = 0;
+            Point newLocation = new Point(20, 35);
+
+            for (int i = 0; i < 20; i++)
+            {
+                Button btn = new Button();
+                btn.Name = count.ToString();
+                btn.Size = new Size(100, 100);
+                btn.Location = newLocation;
+                btn.FlatAppearance.BorderSize = 0;
+                btn.FlatStyle = FlatStyle.Flat;
+                btn.Image = imageList1.Images[index];
+                btn.Click += new EventHandler(this.btn_Click);
+
+                newLocation.Offset(btn.Width + 10, 0);
+                if (newLocation.X >= 750)
+                {
+                    newLocation.Offset(-newLocation.X + 20, 110);
+                }
+
+                
+                count++;
+                index++;
+                Controls.Add(btn);
+            }
         }
 
         private void btn_back_pl_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        public void CreateButtons()
+        {
+
+        }
+
+        private void btn_Click(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+
+            string btnname = btn.Name;
+            Team team = new Team();
+            team.buttonname = btnname;
+
+            team.Show();
+        }
+
+        private void OpenForm()
+        {
+
         }
     }
 }

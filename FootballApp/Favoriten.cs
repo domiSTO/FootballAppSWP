@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FootballApp
 {
-    public partial class AddTeams : Form
+    public partial class Favoriten : Form
     {
-        public AddTeams()
+        public Favoriten()
         {
             InitializeComponent();
         }
@@ -29,7 +29,7 @@ namespace FootballApp
 
             
             // Create a new Team and give it a League
-            SQL_Connection.InsertTeams("FootballApp", "Teams", txtbox_teamname.Text, liganr);
+           
         }
 
         private void AddTeams_Load(object sender, EventArgs e)

@@ -49,11 +49,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddTeams.cs">
+    <Compile Include="Favoriten.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddTeams.Designer.cs">
-      <DependentUpon>AddTeams.cs</DependentUpon>
+    <Compile Include="Favoriten.Designer.cs">
+      <DependentUpon>Favoriten.cs</DependentUpon>
     </Compile>
     <Compile Include="BCrypt.cs" />
     <Compile Include="Eredivisie.cs">
@@ -113,11 +113,17 @@
       <DependentUpon>SerieA.cs</DependentUpon>
     </Compile>
     <Compile Include="SQL_Connection.cs" />
+    <Compile Include="Team.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Team.Designer.cs">
+      <DependentUpon>Team.cs</DependentUpon>
+    </Compile>
     <Compile Include="ToggleButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <EmbeddedResource Include="AddTeams.resx">
-      <DependentUpon>AddTeams.cs</DependentUpon>
+    <EmbeddedResource Include="Favoriten.resx">
+      <DependentUpon>Favoriten.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Eredivisie.resx">
       <DependentUpon>Eredivisie.cs</DependentUpon>
@@ -148,12 +154,16 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SerieA.resx">
       <DependentUpon>SerieA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Team.resx">
+      <DependentUpon>Team.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -168,6 +178,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4-2-3-1-1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
