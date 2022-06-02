@@ -90,6 +90,7 @@ namespace FootballApp
             this.tb_PasswordConfirm_Register.Name = "tb_PasswordConfirm_Register";
             this.tb_PasswordConfirm_Register.Size = new System.Drawing.Size(156, 20);
             this.tb_PasswordConfirm_Register.TabIndex = 6;
+            this.tb_PasswordConfirm_Register.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tb_PasswordConfirm_Register_KeyDown);
             // 
             // lbl_Passwordconfirm_Register
             // 
@@ -124,6 +125,7 @@ namespace FootballApp
             // 
             // Register
             // 
+            this.AcceptButton = this.btn_Register_Register;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(301, 450);
@@ -139,6 +141,8 @@ namespace FootballApp
             this.Name = "Register";
             this.Text = "Register";
             this.Load += new System.EventHandler(this.Register_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Register_KeyDown);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Register_KeyPress);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -15,6 +15,7 @@ namespace FootballApp
         public Register()
         {
             InitializeComponent();
+
         }
 
         private void btn_Register_Register_Click(object sender, EventArgs e)
@@ -64,5 +65,23 @@ namespace FootballApp
                 tb_PasswordConfirm_Register.UseSystemPasswordChar = true;
             }
         }
+
+        private void Register_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            
+                
+        }
+
+        private void Register_KeyDown(object sender, KeyEventArgs e)
+        {
+            
+        }
+
+        private void tb_PasswordConfirm_Register_KeyDown(object sender, KeyEventArgs e)
+        {
+            
+ 
+        }
     }
 }
+

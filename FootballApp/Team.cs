@@ -20,6 +20,8 @@ namespace FootballApp
 
         private void Team_Load(object sender, EventArgs e)
         {
+
+            btn_favoritefilled.Visible = false;
             pbbox_formation.Image = Formations.Images[0];
             pbbox_playerlist.Image = Formations.Images[1];
             pb_currentform.Image = currentForms.Images[0];
@@ -159,5 +161,19 @@ namespace FootballApp
             }
             
         }
+
+        private void btn_favorite_Click(object sender, EventArgs e)
+        {
+            btn_favorite.Visible = false;
+            btn_favoritefilled.Visible = true;
+        }
+
+        private void btn_favoritefilled_Click(object sender, EventArgs e)
+        {
+            btn_favoritefilled.Visible = false;
+            btn_favorite.Visible = true;
+        }
+
+
     }
 }

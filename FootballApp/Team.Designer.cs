@@ -32,21 +32,23 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Team));
             this.lbl_teamname = new System.Windows.Forms.Label();
             this.PremierLeague = new System.Windows.Forms.ImageList(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Formations = new System.Windows.Forms.ImageList(this.components);
             this.lbl_formation = new System.Windows.Forms.Label();
-            this.pbbox_formation = new System.Windows.Forms.PictureBox();
-            this.pbbox_playerlist = new System.Windows.Forms.PictureBox();
             this.lbl_playerlist = new System.Windows.Forms.Label();
             this.lbl_current_position = new System.Windows.Forms.Label();
             this.lbl_form = new System.Windows.Forms.Label();
-            this.pb_currentform = new System.Windows.Forms.PictureBox();
             this.currentForms = new System.Windows.Forms.ImageList(this.components);
             this.lbl_header = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbbox_formation)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbbox_playerlist)).BeginInit();
+            this.btn_favorite = new System.Windows.Forms.Button();
+            this.pb_currentform = new System.Windows.Forms.PictureBox();
+            this.pbbox_playerlist = new System.Windows.Forms.PictureBox();
+            this.pbbox_formation = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_favoritefilled = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pb_currentform)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbbox_playerlist)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbbox_formation)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_teamname
@@ -84,14 +86,6 @@
             this.PremierLeague.Images.SetKeyName(18, "Westham.png");
             this.PremierLeague.Images.SetKeyName(19, "Wolverhampton.png");
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(150, 150);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // Formations
             // 
             this.Formations.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("Formations.ImageStream")));
@@ -109,24 +103,6 @@
             this.lbl_formation.Size = new System.Drawing.Size(76, 25);
             this.lbl_formation.TabIndex = 4;
             this.lbl_formation.Text = "label1";
-            // 
-            // pbbox_formation
-            // 
-            this.pbbox_formation.InitialImage = null;
-            this.pbbox_formation.Location = new System.Drawing.Point(537, 12);
-            this.pbbox_formation.Name = "pbbox_formation";
-            this.pbbox_formation.Size = new System.Drawing.Size(251, 192);
-            this.pbbox_formation.TabIndex = 0;
-            this.pbbox_formation.TabStop = false;
-            // 
-            // pbbox_playerlist
-            // 
-            this.pbbox_playerlist.InitialImage = null;
-            this.pbbox_playerlist.Location = new System.Drawing.Point(537, 244);
-            this.pbbox_playerlist.Name = "pbbox_playerlist";
-            this.pbbox_playerlist.Size = new System.Drawing.Size(192, 204);
-            this.pbbox_playerlist.TabIndex = 5;
-            this.pbbox_playerlist.TabStop = false;
             // 
             // lbl_playerlist
             // 
@@ -158,14 +134,6 @@
             this.lbl_form.TabIndex = 8;
             this.lbl_form.Text = "Aktuelle Form:";
             // 
-            // pb_currentform
-            // 
-            this.pb_currentform.Location = new System.Drawing.Point(215, 306);
-            this.pb_currentform.Name = "pb_currentform";
-            this.pb_currentform.Size = new System.Drawing.Size(129, 30);
-            this.pb_currentform.TabIndex = 9;
-            this.pb_currentform.TabStop = false;
-            // 
             // currentForms
             // 
             this.currentForms.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("currentForms.ImageStream")));
@@ -182,11 +150,71 @@
             this.lbl_header.TabIndex = 10;
             this.lbl_header.Text = "Team-Übersicht";
             // 
+            // btn_favorite
+            // 
+            this.btn_favorite.FlatAppearance.BorderSize = 0;
+            this.btn_favorite.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_favorite.Image = global::FootballApp.Properties.Resources.Star_unfilled;
+            this.btn_favorite.Location = new System.Drawing.Point(168, 12);
+            this.btn_favorite.Name = "btn_favorite";
+            this.btn_favorite.Size = new System.Drawing.Size(75, 55);
+            this.btn_favorite.TabIndex = 11;
+            this.btn_favorite.UseVisualStyleBackColor = true;
+            this.btn_favorite.Click += new System.EventHandler(this.btn_favorite_Click);
+            // 
+            // pb_currentform
+            // 
+            this.pb_currentform.Location = new System.Drawing.Point(215, 306);
+            this.pb_currentform.Name = "pb_currentform";
+            this.pb_currentform.Size = new System.Drawing.Size(129, 30);
+            this.pb_currentform.TabIndex = 9;
+            this.pb_currentform.TabStop = false;
+            // 
+            // pbbox_playerlist
+            // 
+            this.pbbox_playerlist.InitialImage = null;
+            this.pbbox_playerlist.Location = new System.Drawing.Point(537, 244);
+            this.pbbox_playerlist.Name = "pbbox_playerlist";
+            this.pbbox_playerlist.Size = new System.Drawing.Size(192, 204);
+            this.pbbox_playerlist.TabIndex = 5;
+            this.pbbox_playerlist.TabStop = false;
+            // 
+            // pbbox_formation
+            // 
+            this.pbbox_formation.InitialImage = null;
+            this.pbbox_formation.Location = new System.Drawing.Point(537, 12);
+            this.pbbox_formation.Name = "pbbox_formation";
+            this.pbbox_formation.Size = new System.Drawing.Size(251, 192);
+            this.pbbox_formation.TabIndex = 0;
+            this.pbbox_formation.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(150, 150);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btn_favoritefilled
+            // 
+            this.btn_favoritefilled.FlatAppearance.BorderSize = 0;
+            this.btn_favoritefilled.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_favoritefilled.Image = global::FootballApp.Properties.Resources.Star_filled;
+            this.btn_favoritefilled.Location = new System.Drawing.Point(170, 12);
+            this.btn_favoritefilled.Name = "btn_favoritefilled";
+            this.btn_favoritefilled.Size = new System.Drawing.Size(75, 55);
+            this.btn_favoritefilled.TabIndex = 12;
+            this.btn_favoritefilled.UseVisualStyleBackColor = true;
+            this.btn_favoritefilled.Click += new System.EventHandler(this.btn_favoritefilled_Click);
+            // 
             // Team
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_favoritefilled);
+            this.Controls.Add(this.btn_favorite);
             this.Controls.Add(this.lbl_header);
             this.Controls.Add(this.pb_currentform);
             this.Controls.Add(this.lbl_form);
@@ -200,10 +228,10 @@
             this.Name = "Team";
             this.Text = "i";
             this.Load += new System.EventHandler(this.Team_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbbox_formation)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbbox_playerlist)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_currentform)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbbox_playerlist)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbbox_formation)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -224,5 +252,7 @@
         private System.Windows.Forms.PictureBox pb_currentform;
         private System.Windows.Forms.ImageList currentForms;
         private System.Windows.Forms.Label lbl_header;
+        private System.Windows.Forms.Button btn_favorite;
+        private System.Windows.Forms.Button btn_favoritefilled;
     }
 }
