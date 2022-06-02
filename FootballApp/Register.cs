@@ -20,11 +20,13 @@ namespace FootballApp
 
         private void btn_Register_Register_Click(object sender, EventArgs e)
         {
+
+            
             //RegisterCheck with BCrypt-Class
             string salt;
             string hashedpw;
 
-            if (tb_Password_Register.Text == tb_PasswordConfirm_Register.Text)
+            if (tb_Password_Register.Text == tb_PasswordConfirm_Register.Text && tb_PasswordConfirm_Register.Text.Length >= 8)
             {
                 salt = BCrypt.GenerateSalt();
 
@@ -37,7 +39,7 @@ namespace FootballApp
             }
             else
             {
-                MessageBox.Show("Passwörter stimmen nicht überein.", "Passwort Error!");
+                MessageBox.Show("Passwörter stimmen nicht überein oder entspricht nicht den Sicherheitsanforderungen.", "Passwort Error!");
             }
         }
 
