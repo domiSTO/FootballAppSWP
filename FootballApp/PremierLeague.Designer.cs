@@ -89,6 +89,7 @@ namespace FootballApp
             this.Controls.Add(this.lbl_premierleague);
             this.Controls.Add(this.btn_back_pl);
             this.Name = "PremierLeague";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PremierLeague";
             this.Load += new System.EventHandler(this.PremierLeague_Load);
             this.ResumeLayout(false);

@@ -139,6 +139,7 @@ namespace FootballApp
             this.Controls.Add(this.lbl_Email_Register);
             this.Controls.Add(this.lbl_TItle_Register);
             this.Name = "Register";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Register";
             this.Load += new System.EventHandler(this.Register_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Register_KeyDown);

@@ -226,6 +226,7 @@
             this.Controls.Add(this.lbl_teamname);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Team";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "i";
             this.Load += new System.EventHandler(this.Team_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_currentform)).EndInit();

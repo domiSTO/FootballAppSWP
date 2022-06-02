@@ -237,6 +237,7 @@ namespace FootballApp
             this.Controls.Add(this.btn_Eredivisie);
             this.Controls.Add(this.btn_Eredivisie_Darkmode);
             this.Name = "Frm_Leagues";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ligen wählen";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Frm_Leagues_FormClosed);
             this.Load += new System.EventHandler(this.Frm_Leagues_Load);

@@ -155,6 +155,7 @@ namespace FootballApp
             this.Controls.Add(this.lbl_Username_Login);
             this.Controls.Add(this.lbl_Title_Login);
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Anmeldung";
             this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
