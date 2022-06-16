@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CefSharp.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -127,6 +128,7 @@ namespace FootballApp
             }
         }
 
+        ChromiumWebBrowser browser;
         private void Frm_Leagues_Load(object sender, EventArgs e)
         {
             // Create Database and Tables with SQL-Connection

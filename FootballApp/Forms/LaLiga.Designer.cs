@@ -31,6 +31,7 @@ namespace FootballApp
         {
             this.btn_back_ll = new System.Windows.Forms.Button();
             this.lbl_laliga = new System.Windows.Forms.Label();
+            this.pnl_browser = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // btn_back_ll
@@ -53,11 +54,20 @@ namespace FootballApp
             this.lbl_laliga.TabIndex = 3;
             this.lbl_laliga.Text = "La Liga";
             // 
+            // pnl_browser
+            // 
+            this.pnl_browser.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnl_browser.Location = new System.Drawing.Point(0, 0);
+            this.pnl_browser.Name = "pnl_browser";
+            this.pnl_browser.Size = new System.Drawing.Size(800, 450);
+            this.pnl_browser.TabIndex = 15;
+            // 
             // LaLiga
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pnl_browser);
             this.Controls.Add(this.lbl_laliga);
             this.Controls.Add(this.btn_back_ll);
             this.Name = "LaLiga";
@@ -72,5 +82,6 @@ namespace FootballApp
 
         private System.Windows.Forms.Button btn_back_ll;
         private System.Windows.Forms.Label lbl_laliga;
+        private System.Windows.Forms.Panel pnl_browser;
     }
 }

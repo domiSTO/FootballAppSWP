@@ -32,6 +32,7 @@ namespace FootballApp
             this.btn_back_pl = new System.Windows.Forms.Button();
             this.lbl_premierleague = new System.Windows.Forms.Label();
             this.btn_Teams_Bayern = new System.Windows.Forms.Button();
+            this.pnl_browser = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // btn_back_pl
@@ -63,11 +64,20 @@ namespace FootballApp
             this.btn_Teams_Bayern.TabIndex = 15;
             this.btn_Teams_Bayern.UseVisualStyleBackColor = true;
             // 
+            // pnl_browser
+            // 
+            this.pnl_browser.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnl_browser.Location = new System.Drawing.Point(0, 0);
+            this.pnl_browser.Name = "pnl_browser";
+            this.pnl_browser.Size = new System.Drawing.Size(800, 450);
+            this.pnl_browser.TabIndex = 16;
+            // 
             // PremierLeague
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pnl_browser);
             this.Controls.Add(this.btn_Teams_Bayern);
             this.Controls.Add(this.lbl_premierleague);
             this.Controls.Add(this.btn_back_pl);
@@ -84,5 +94,6 @@ namespace FootballApp
         private System.Windows.Forms.Button btn_back_pl;
         private System.Windows.Forms.Label lbl_premierleague;
         private System.Windows.Forms.Button btn_Teams_Bayern;
+        private System.Windows.Forms.Panel pnl_browser;
     }
 }

@@ -29,20 +29,9 @@ namespace FootballApp
         /// </summary>
         private void InitializeComponent()
         {
-            this.btn_back = new System.Windows.Forms.Button();
             this.lbl_bundesliga = new System.Windows.Forms.Label();
-            this.btn_Teams_Bayern = new System.Windows.Forms.Button();
+            this.pnl_browser = new System.Windows.Forms.Panel();
             this.SuspendLayout();
-            // 
-            // btn_back
-            // 
-            this.btn_back.Location = new System.Drawing.Point(640, 415);
-            this.btn_back.Name = "btn_back";
-            this.btn_back.Size = new System.Drawing.Size(75, 23);
-            this.btn_back.TabIndex = 11;
-            this.btn_back.Text = "Zurück";
-            this.btn_back.UseVisualStyleBackColor = true;
-            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // lbl_bundesliga
             // 
@@ -54,24 +43,21 @@ namespace FootballApp
             this.lbl_bundesliga.TabIndex = 13;
             this.lbl_bundesliga.Text = "Bundesliga";
             // 
-            // btn_Teams_Bayern
+            // pnl_browser
             // 
-            this.btn_Teams_Bayern.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Teams_Bayern.Location = new System.Drawing.Point(295, 139);
-            this.btn_Teams_Bayern.Name = "btn_Teams_Bayern";
-            this.btn_Teams_Bayern.Size = new System.Drawing.Size(125, 99);
-            this.btn_Teams_Bayern.TabIndex = 14;
-            this.btn_Teams_Bayern.UseVisualStyleBackColor = true;
-            this.btn_Teams_Bayern.Click += new System.EventHandler(this.btn_Teams_Bayern_Click);
+            this.pnl_browser.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnl_browser.Location = new System.Drawing.Point(0, 0);
+            this.pnl_browser.Name = "pnl_browser";
+            this.pnl_browser.Size = new System.Drawing.Size(743, 450);
+            this.pnl_browser.TabIndex = 14;
             // 
             // Bundesliga
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(743, 450);
-            this.Controls.Add(this.btn_Teams_Bayern);
+            this.Controls.Add(this.pnl_browser);
             this.Controls.Add(this.lbl_bundesliga);
-            this.Controls.Add(this.btn_back);
             this.Name = "Bundesliga";
             this.Text = "Bundesliga";
             this.Load += new System.EventHandler(this.Bundesliga_Load);
@@ -81,8 +67,7 @@ namespace FootballApp
         }
 
         #endregion
-        private System.Windows.Forms.Button btn_back;
         private System.Windows.Forms.Label lbl_bundesliga;
-        private System.Windows.Forms.Button btn_Teams_Bayern;
+        private System.Windows.Forms.Panel pnl_browser;
     }
 }
