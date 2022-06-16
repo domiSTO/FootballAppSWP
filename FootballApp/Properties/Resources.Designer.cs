@@ -63,9 +63,9 @@ namespace FootballApp.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ACMilan {
+        internal static System.Drawing.Bitmap Erdivisie_Darkmode {
             get {
-                object obj = ResourceManager.GetObject("ACMilan", resourceCulture);
+                object obj = ResourceManager.GetObject("Erdivisie_Darkmode", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace FootballApp.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Ajax {
+        internal static System.Drawing.Bitmap FootballAppLogo31 {
             get {
-                object obj = ResourceManager.GetObject("Ajax", resourceCulture);
+                object obj = ResourceManager.GetObject("FootballAppLogo31", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,49 +83,9 @@ namespace FootballApp.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Bayern {
+        internal static System.Drawing.Bitmap PremierLeague_Darkmode_200x200 {
             get {
-                object obj = ResourceManager.GetObject("Bayern", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap logo_transparent {
-            get {
-                object obj = ResourceManager.GetObject("logo_transparent", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ManCity {
-            get {
-                object obj = ResourceManager.GetObject("ManCity", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Paris {
-            get {
-                object obj = ResourceManager.GetObject("Paris", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Real_Madrid {
-            get {
-                object obj = ResourceManager.GetObject("Real_Madrid", resourceCulture);
+                object obj = ResourceManager.GetObject("PremierLeague_Darkmode_200x200", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -141,11 +101,21 @@ namespace FootballApp.Properties {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Icon ähnlich wie (Symbol).
+        /// </summary>
+        internal static System.Drawing.Icon soccer_ball_39433___Kopie1 {
+            get {
+                object obj = ResourceManager.GetObject("soccer_ball_39433___Kopie1", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Star_filled {
+        internal static System.Drawing.Bitmap sportsball {
             get {
-                object obj = ResourceManager.GetObject("Star_filled", resourceCulture);
+                object obj = ResourceManager.GetObject("sportsball", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,10 +123,20 @@ namespace FootballApp.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Star_unfilled {
+        internal static System.Drawing.Bitmap sportsball1 {
             get {
-                object obj = ResourceManager.GetObject("Star_unfilled", resourceCulture);
+                object obj = ResourceManager.GetObject("sportsball1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Icon ähnlich wie (Symbol).
+        /// </summary>
+        internal static System.Drawing.Icon Unbenannt_2 {
+            get {
+                object obj = ResourceManager.GetObject("Unbenannt_2", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
             }
         }
     }

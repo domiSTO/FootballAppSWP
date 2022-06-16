@@ -23,10 +23,11 @@ namespace FootballApp
 
         private void CurrentGames_Load(object sender, EventArgs e)
         {
+            //Chromium Browser öffnen
             var adress = $@"{Application.StartupPath}\html-resources\CurrentFixtures.html";
             browser = new ChromiumWebBrowser(adress);
 
-            pnl_browser.Controls.Add(browser);
+           this.Controls.Add(browser);
         }
     }
 }

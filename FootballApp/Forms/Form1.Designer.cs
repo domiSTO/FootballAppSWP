@@ -30,9 +30,6 @@ namespace FootballApp
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Leagues));
-            this.leagues_Title = new System.Windows.Forms.Label();
-            this.pb_DarkMode = new System.Windows.Forms.PictureBox();
-            this.pb_LightMode = new System.Windows.Forms.PictureBox();
             this.btn_LaLiga = new System.Windows.Forms.Button();
             this.btn_SerieA = new System.Windows.Forms.Button();
             this.btn_Ligue1 = new System.Windows.Forms.Button();
@@ -42,40 +39,10 @@ namespace FootballApp
             this.btn_Eredivisie = new System.Windows.Forms.Button();
             this.btn_Eredivisie_Darkmode = new System.Windows.Forms.Button();
             this.btn_currentgames = new System.Windows.Forms.Button();
-            this.tb_DarkTheme = new FootballApp.ToggleButton();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_DarkMode)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_LightMode)).BeginInit();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // leagues_Title
-            // 
-            this.leagues_Title.AutoSize = true;
-            this.leagues_Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.leagues_Title.Location = new System.Drawing.Point(243, 31);
-            this.leagues_Title.Name = "leagues_Title";
-            this.leagues_Title.Size = new System.Drawing.Size(283, 31);
-            this.leagues_Title.TabIndex = 0;
-            this.leagues_Title.Text = "Wählen Sie Ihre Liga";
-            // 
-            // pb_DarkMode
-            // 
-            this.pb_DarkMode.Image = ((System.Drawing.Image)(resources.GetObject("pb_DarkMode.Image")));
-            this.pb_DarkMode.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb_DarkMode.InitialImage")));
-            this.pb_DarkMode.Location = new System.Drawing.Point(110, 16);
-            this.pb_DarkMode.Name = "pb_DarkMode";
-            this.pb_DarkMode.Size = new System.Drawing.Size(50, 55);
-            this.pb_DarkMode.TabIndex = 12;
-            this.pb_DarkMode.TabStop = false;
-            // 
-            // pb_LightMode
-            // 
-            this.pb_LightMode.Image = ((System.Drawing.Image)(resources.GetObject("pb_LightMode.Image")));
-            this.pb_LightMode.InitialImage = ((System.Drawing.Image)(resources.GetObject("pb_LightMode.InitialImage")));
-            this.pb_LightMode.Location = new System.Drawing.Point(3, 16);
-            this.pb_LightMode.Name = "pb_LightMode";
-            this.pb_LightMode.Size = new System.Drawing.Size(50, 46);
-            this.pb_LightMode.TabIndex = 11;
-            this.pb_LightMode.TabStop = false;
             // 
             // btn_LaLiga
             // 
@@ -84,7 +51,7 @@ namespace FootballApp
             this.btn_LaLiga.Image = ((System.Drawing.Image)(resources.GetObject("btn_LaLiga.Image")));
             this.btn_LaLiga.Location = new System.Drawing.Point(545, 347);
             this.btn_LaLiga.Name = "btn_LaLiga";
-            this.btn_LaLiga.Size = new System.Drawing.Size(203, 194);
+            this.btn_LaLiga.Size = new System.Drawing.Size(203, 202);
             this.btn_LaLiga.TabIndex = 5;
             this.btn_LaLiga.UseVisualStyleBackColor = true;
             this.btn_LaLiga.Click += new System.EventHandler(this.btn_LaLiga_Click);
@@ -129,7 +96,7 @@ namespace FootballApp
             // 
             this.btn_PremierLeague.FlatAppearance.BorderSize = 0;
             this.btn_PremierLeague.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_PremierLeague.Image = ((System.Drawing.Image)(resources.GetObject("btn_PremierLeague.Image")));
+            this.btn_PremierLeague.Image = global::FootballApp.Properties.Resources.PremierLeague_Darkmode_200x200;
             this.btn_PremierLeague.Location = new System.Drawing.Point(304, 96);
             this.btn_PremierLeague.Name = "btn_PremierLeague";
             this.btn_PremierLeague.Size = new System.Drawing.Size(203, 204);
@@ -153,7 +120,7 @@ namespace FootballApp
             // 
             this.btn_Eredivisie.FlatAppearance.BorderSize = 0;
             this.btn_Eredivisie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Eredivisie.Image = ((System.Drawing.Image)(resources.GetObject("btn_Eredivisie.Image")));
+            this.btn_Eredivisie.Image = global::FootballApp.Properties.Resources.Erdivisie_Darkmode;
             this.btn_Eredivisie.Location = new System.Drawing.Point(304, 347);
             this.btn_Eredivisie.Name = "btn_Eredivisie";
             this.btn_Eredivisie.Size = new System.Drawing.Size(203, 194);
@@ -175,75 +142,84 @@ namespace FootballApp
             // 
             // btn_currentgames
             // 
-            this.btn_currentgames.Location = new System.Drawing.Point(600, 16);
+            this.btn_currentgames.FlatAppearance.BorderSize = 0;
+            this.btn_currentgames.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_currentgames.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_currentgames.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btn_currentgames.Image = global::FootballApp.Properties.Resources.sportsball1;
+            this.btn_currentgames.Location = new System.Drawing.Point(564, 25);
             this.btn_currentgames.Name = "btn_currentgames";
             this.btn_currentgames.Size = new System.Drawing.Size(171, 55);
             this.btn_currentgames.TabIndex = 13;
             this.btn_currentgames.Text = "Aktuelle Spiele";
+            this.btn_currentgames.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_currentgames.UseVisualStyleBackColor = true;
             this.btn_currentgames.Click += new System.EventHandler(this.btn_currentgames_Click);
             // 
-            // tb_DarkTheme
+            // button1
             // 
-            this.tb_DarkTheme.AutoSize = true;
-            this.tb_DarkTheme.Location = new System.Drawing.Point(59, 31);
-            this.tb_DarkTheme.MinimumSize = new System.Drawing.Size(45, 22);
-            this.tb_DarkTheme.Name = "tb_DarkTheme";
-            this.tb_DarkTheme.OffBackColor = System.Drawing.Color.DarkOrange;
-            this.tb_DarkTheme.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.tb_DarkTheme.OnBackColor = System.Drawing.Color.LimeGreen;
-            this.tb_DarkTheme.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.tb_DarkTheme.Size = new System.Drawing.Size(45, 22);
-            this.tb_DarkTheme.TabIndex = 8;
-            this.tb_DarkTheme.UseVisualStyleBackColor = true;
-            this.tb_DarkTheme.CheckedChanged += new System.EventHandler(this.tb_DarkTheme_CheckedChanged);
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(757, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(25, 25);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::FootballApp.Properties.Resources.FootballAppLogo31;
+            this.pictureBox1.Location = new System.Drawing.Point(262, 13);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(246, 78);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
             // 
             // Frm_Leagues
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(800, 583);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.ClientSize = new System.Drawing.Size(794, 577);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_currentgames);
-            this.Controls.Add(this.pb_DarkMode);
-            this.Controls.Add(this.pb_LightMode);
-            this.Controls.Add(this.tb_DarkTheme);
             this.Controls.Add(this.btn_LaLiga);
             this.Controls.Add(this.btn_SerieA);
             this.Controls.Add(this.btn_Ligue1);
             this.Controls.Add(this.btn_Bundesliga);
-            this.Controls.Add(this.leagues_Title);
             this.Controls.Add(this.btn_PremierLeague);
             this.Controls.Add(this.btn_Premierleague_Darkmode);
             this.Controls.Add(this.btn_Eredivisie);
             this.Controls.Add(this.btn_Eredivisie_Darkmode);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Frm_Leagues";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ligen wählen";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Frm_Leagues_FormClosed);
             this.Load += new System.EventHandler(this.Frm_Leagues_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pb_DarkMode)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_LightMode)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label leagues_Title;
         private System.Windows.Forms.Button btn_Bundesliga;
         private System.Windows.Forms.Button btn_PremierLeague;
         private System.Windows.Forms.Button btn_Ligue1;
         private System.Windows.Forms.Button btn_SerieA;
         private System.Windows.Forms.Button btn_LaLiga;
         private System.Windows.Forms.Button btn_Eredivisie;
-        private ToggleButton tb_DarkTheme;
         private System.Windows.Forms.Button btn_Premierleague_Darkmode;
         private System.Windows.Forms.Button btn_Eredivisie_Darkmode;
-        private System.Windows.Forms.PictureBox pb_LightMode;
-        private System.Windows.Forms.PictureBox pb_DarkMode;
         private System.Windows.Forms.Button btn_currentgames;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

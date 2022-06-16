@@ -19,35 +19,17 @@ namespace FootballApp
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_back_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            
-        }
-
         ChromiumWebBrowser browser;
         private void Bundesliga_Load(object sender, EventArgs e)
         {
-
+            //Chromiumbrowser öffnen
             var adress = $@"{Application.StartupPath}\html-resources\BuliStandings.html";
             browser = new ChromiumWebBrowser(adress);
 
-            pnl_browser.Controls.Add(browser);
-            
-           
-
-
+            this.Controls.Add(browser);
 
         }
 
-        private void btn_Teams_Bayern_Click(object sender, EventArgs e)
-        {
-            
-        }
+        
     }
 }

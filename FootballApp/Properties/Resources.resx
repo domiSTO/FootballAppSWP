@@ -118,34 +118,34 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Ajax" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Ajax.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FootballAppLogo3.PNG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FootballAppLogo3.PNG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Paris" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Paris.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sportsball" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sportsball.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ACMilan" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>ACMilan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Bayern" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Bayern.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Star_unfilled" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Star_unfilled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ManCity" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>ManCity.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Real_Madrid" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Real Madrid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Star_filled" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Star_filled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="logo_transparent" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo_transparent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FootballAppLogo3_PNG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FootballAppLogo3.PNG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="soccer_ball_39433___Kopie" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\soccer-ball_39433 - Kopie.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sportsball1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sportsball.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="soccer_ball_39433___Kopie1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\soccer-ball_39433 - Kopie.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PremierLeague_Darkmode_200x200" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>PremierLeague_Darkmode_200x200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Unbenannt_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Unbenannt-2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Erdivisie_Darkmode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Erdivisie_Darkmode.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FootballAppLogo31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FootballAppLogo3.PNG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -21,33 +21,13 @@ namespace FootballApp
         ChromiumWebBrowser browser;
         private void PremierLeague_Load(object sender, EventArgs e)
         {
+            //Chromiumbrowser öffnen
             var adress = $@"{Application.StartupPath}\html-resources\PremStandings.html";
             browser = new ChromiumWebBrowser(adress);
 
-            pnl_browser.Controls.Add(browser);
+           this.Controls.Add(browser);
 
         }
 
-        //public void Bgenerate(Properties.Resources res)
-        //{
-        //    for (int i = 1; i < 21; i++)
-        //    {
-        //        Button b = new Button();
-        //        b.BackgroundImage = res;
-        //        b.Name = "btn_PremierLeague" + i;
-        //        b.Width = flp_PremierLeague.Width / 6;
-        //        b.Height = 70;
-        //        b.FlatStyle = FlatStyle.Flat;
-        //        b.FlatAppearance.BorderSize = 0;
-        //        b.Margin = new Padding(0);
-        //        flp_PremierLeague.Controls.Add(b);
-        //    }
-
-        //}
-
-        private void btn_back_pl_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
     }
 }

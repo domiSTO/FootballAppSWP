@@ -29,33 +29,23 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CurrentGames));
-            this.pnl_browser = new System.Windows.Forms.Panel();
             this.SuspendLayout();
-            // 
-            // pnl_browser
-            // 
-            this.pnl_browser.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_browser.Location = new System.Drawing.Point(0, 0);
-            this.pnl_browser.Name = "pnl_browser";
-            this.pnl_browser.Size = new System.Drawing.Size(800, 450);
-            this.pnl_browser.TabIndex = 0;
             // 
             // CurrentGames
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(56)))), ((int)(((byte)(63)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pnl_browser);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CurrentGames";
-            this.Text = "CurrentGames";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Aktuelle Spiele";
             this.Load += new System.EventHandler(this.CurrentGames_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel pnl_browser;
     }
 }

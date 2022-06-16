@@ -64,10 +64,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\BCrypt.cs" />
-    <Compile Include="CurrentGames.cs">
+    <Compile Include="Forms\CurrentGames.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CurrentGames.Designer.cs">
+    <Compile Include="Forms\CurrentGames.Designer.cs">
       <DependentUpon>CurrentGames.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Eredivisie.cs">
@@ -124,7 +124,7 @@
     <Compile Include="Classes\ToggleButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <EmbeddedResource Include="CurrentGames.resx">
+    <EmbeddedResource Include="Forms\CurrentGames.resx">
       <DependentUpon>CurrentGames.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Eredivisie.resx">
@@ -150,14 +150,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Forms\SerieA.resx">
       <DependentUpon>SerieA.cs</DependentUpon>
     </EmbeddedResource>
@@ -166,6 +161,11 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -174,33 +174,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Properties\Bayern.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Properties\Ajax.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Properties\ACMilan.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Properties\ManCity.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Properties\Paris.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Properties\Real Madrid.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Properties\Star_unfilled.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Properties\Star_filled.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\logo_transparent.png" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="html-resources\BuliStandings.html">
@@ -223,12 +196,19 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\soccer-ball_39433 - Kopie.ico" />
+    <EmbeddedResource Include="Resources\soccer-ball_39433 - Kopie.ico" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="html-resources\CurrentFixtures.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FootballAppLogo3.PNG.png" />
+    <None Include="Properties\Erdivisie_Darkmode.png" />
+    <None Include="Properties\PremierLeague_Darkmode_200x200.png" />
+    <None Include="Resources\sportsball.png" />
+    <None Include="Resources\Unbenannt-2.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

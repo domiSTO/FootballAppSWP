@@ -105,7 +105,6 @@ namespace FootballApp
             this.lbl_Register_Login.TabIndex = 6;
             this.lbl_Register_Login.Text = "Registrieren";
             this.lbl_Register_Login.UseVisualStyleBackColor = true;
-            
             // 
             // btn_Login_Login
             // 
@@ -115,7 +114,6 @@ namespace FootballApp
             this.btn_Login_Login.TabIndex = 7;
             this.btn_Login_Login.Text = "Anmelden";
             this.btn_Login_Login.UseVisualStyleBackColor = true;
-            
             // 
             // btn_Back_Login
             // 
@@ -154,6 +152,7 @@ namespace FootballApp
             this.Controls.Add(this.lbl_Username_Login);
             this.Controls.Add(this.lbl_Title_Login);
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Anmeldung";
             this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);

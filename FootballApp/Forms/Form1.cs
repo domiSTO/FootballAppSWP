@@ -95,42 +95,12 @@ namespace FootballApp
 
         }
 
-        private void tb_DarkTheme_CheckedChanged(object sender, EventArgs e)
-        {
-            //Changes Pictures according to selected Mode (White/Dark)
-            if (tb_DarkTheme.Checked)
-            {
-
-
-                this.BackColor = Color.DimGray;
-                leagues_Title.ForeColor = Color.WhiteSmoke;
-                
-                
-                btn_Premierleague_Darkmode.Show();
-                btn_PremierLeague.Hide();
-                btn_Eredivisie_Darkmode.Show();
-                btn_Eredivisie.Hide();
-                pb_DarkMode.Show();
-                pb_LightMode.Hide();
-            }
-            else
-            {
-                this.BackColor = Color.WhiteSmoke;
-                leagues_Title.ForeColor = Color.Black;
-                
-               
-                btn_Premierleague_Darkmode.Hide();
-                btn_PremierLeague.Show();
-                btn_Eredivisie_Darkmode.Hide();
-                btn_Eredivisie.Show();
-                pb_DarkMode.Hide();
-                pb_LightMode.Show();
-            }
-        }
+        
 
        
         private void Frm_Leagues_Load(object sender, EventArgs e)
         {
+            //Chromiumbrowser initialisieren
             CefSettings settings = new CefSettings();
             Cef.Initialize(settings);
 
@@ -150,8 +120,7 @@ namespace FootballApp
             SQL_Connection.InsertLeagues("FootballApp", "Ligen");
 
 
-            pb_LightMode.Show();
-            pb_DarkMode.Hide();
+           
 
         }
 
@@ -174,6 +143,11 @@ namespace FootballApp
         {
             CurrentGames currentGames = new CurrentGames();
             currentGames.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
