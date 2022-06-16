@@ -121,25 +121,13 @@
   <data name="unnamed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\unnamed.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Star_unfilled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Star_unfilled1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="4-2-3-1-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4-2-3-1-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BuliStandings" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>BuliStandings.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="EredeviseStandings" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>EredeviseStandings.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="LaLigaStandings" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>LaLigaStandings.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="Ligue1Standings" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Ligue1Standings.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="PremStandings" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>PremStandings.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="SerieStandings" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>SerieStandings.html;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  <data name="Star_filled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Star_filled1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
