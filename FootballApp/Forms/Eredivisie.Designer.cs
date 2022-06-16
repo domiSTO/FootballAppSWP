@@ -62,6 +62,7 @@ namespace FootballApp
             this.pnl_browser.Name = "pnl_browser";
             this.pnl_browser.Size = new System.Drawing.Size(800, 450);
             this.pnl_browser.TabIndex = 15;
+            this.pnl_browser.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_browser_Paint);
             // 
             // Eredivisie
             // 

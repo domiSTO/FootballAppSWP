@@ -27,10 +27,15 @@ namespace FootballApp
         ChromiumWebBrowser browser;
         private void Eredivisie_Load(object sender, EventArgs e)
         {
-            var adress = $@"{Application.StartupPath}\html-resources\BuliStandings.html";
+            var adress = $@"{Application.StartupPath}\html-resources\EredeviseStandings.html";
             browser = new ChromiumWebBrowser(adress);
 
             pnl_browser.Controls.Add(browser);
+        }
+
+        private void pnl_browser_Paint(object sender, PaintEventArgs e)
+        {
+
         }
 
         //public void Bgenerate(Properties.Resources res)

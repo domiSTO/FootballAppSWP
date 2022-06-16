@@ -175,6 +175,8 @@ namespace FootballApp
             // 
             // btn_currentgames
             // 
+            this.btn_currentgames.FlatAppearance.BorderSize = 0;
+            this.btn_currentgames.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_currentgames.Location = new System.Drawing.Point(600, 16);
             this.btn_currentgames.Name = "btn_currentgames";
             this.btn_currentgames.Size = new System.Drawing.Size(171, 55);
