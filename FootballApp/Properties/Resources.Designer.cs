@@ -71,6 +71,192 @@ namespace FootballApp.Properties {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die &lt;!DOCTYPE html&gt;
+        ///&lt;html&gt;
+        ///&lt;body&gt;
+        ///
+        ///&lt;div id=&quot;wg-api-football-standings&quot;
+        ///    data-host=&quot;v3.football.api-sports.io&quot;
+        ///    data-key=&quot;6382ac6ee050e80202c6e4eb4ac42321&quot;
+        ///    data-league=&quot;78&quot;
+        ///    data-team=&quot;&quot;
+        ///    data-season=&quot;2021&quot;
+        ///    data-theme=&quot;dark&quot;
+        ///    data-show-errors=&quot;true&quot;
+        ///    data-show-logos=&quot;true&quot;
+        ///    class=&quot;wg_loader&quot;&gt;
+        ///&lt;/div&gt;
+        ///&lt;script
+        ///    type=&quot;module&quot;
+        ///    src=&quot;https://widgets.api-sports.io/football/1.1.8/widget.js&quot;&gt;
+        ///&lt;/script&gt;
+        ///
+        ///
+        ///&lt;/body&gt;
+        ///&lt;/html&gt; ähnelt.
+        /// </summary>
+        internal static string BuliStandings {
+            get {
+                return ResourceManager.GetString("BuliStandings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die &lt;!DOCTYPE html&gt;
+        ///&lt;html&gt;
+        ///&lt;body&gt;
+        ///
+        ///&lt;div id=&quot;wg-api-football-standings&quot;
+        ///    data-host=&quot;v3.football.api-sports.io&quot;
+        ///    data-key=&quot;6382ac6ee050e80202c6e4eb4ac42321&quot;
+        ///    data-league=&quot;88&quot;
+        ///    data-team=&quot;&quot;
+        ///    data-season=&quot;2021&quot;
+        ///    data-theme=&quot;dark&quot;
+        ///    data-show-errors=&quot;true&quot;
+        ///    data-show-logos=&quot;true&quot;
+        ///    class=&quot;wg_loader&quot;&gt;
+        ///&lt;/div&gt;
+        ///&lt;script
+        ///    type=&quot;module&quot;
+        ///    src=&quot;https://widgets.api-sports.io/football/1.1.8/widget.js&quot;&gt;
+        ///&lt;/script&gt;
+        ///
+        ///
+        ///&lt;/body&gt;
+        ///&lt;/html&gt; ähnelt.
+        /// </summary>
+        internal static string EredeviseStandings {
+            get {
+                return ResourceManager.GetString("EredeviseStandings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die &lt;!DOCTYPE html&gt;
+        ///&lt;html&gt;
+        ///&lt;body&gt;
+        ///
+        ///&lt;div id=&quot;wg-api-football-standings&quot;
+        ///    data-host=&quot;v3.football.api-sports.io&quot;
+        ///    data-key=&quot;6382ac6ee050e80202c6e4eb4ac42321&quot;
+        ///    data-league=&quot;140&quot;
+        ///    data-team=&quot;&quot;
+        ///    data-season=&quot;2021&quot;
+        ///    data-theme=&quot;dark&quot;
+        ///    data-show-errors=&quot;true&quot;
+        ///    data-show-logos=&quot;true&quot;
+        ///    class=&quot;wg_loader&quot;&gt;
+        ///&lt;/div&gt;
+        ///&lt;script
+        ///    type=&quot;module&quot;
+        ///    src=&quot;https://widgets.api-sports.io/football/1.1.8/widget.js&quot;&gt;
+        ///&lt;/script&gt;
+        ///
+        ///
+        ///&lt;/body&gt;
+        ///&lt;/html&gt; ähnelt.
+        /// </summary>
+        internal static string LaLigaStandings {
+            get {
+                return ResourceManager.GetString("LaLigaStandings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die &lt;!DOCTYPE html&gt;
+        ///&lt;html&gt;
+        ///&lt;body&gt;
+        ///
+        ///&lt;div id=&quot;wg-api-football-standings&quot;
+        ///    data-host=&quot;v3.football.api-sports.io&quot;
+        ///    data-key=&quot;6382ac6ee050e80202c6e4eb4ac42321&quot;
+        ///    data-league=&quot;61&quot;
+        ///    data-team=&quot;&quot;
+        ///    data-season=&quot;2021&quot;
+        ///    data-theme=&quot;dark&quot;
+        ///    data-show-errors=&quot;true&quot;
+        ///    data-show-logos=&quot;true&quot;
+        ///    class=&quot;wg_loader&quot;&gt;
+        ///&lt;/div&gt;
+        ///&lt;script
+        ///    type=&quot;module&quot;
+        ///    src=&quot;https://widgets.api-sports.io/football/1.1.8/widget.js&quot;&gt;
+        ///&lt;/script&gt;
+        ///
+        ///
+        ///&lt;/body&gt;
+        ///&lt;/html&gt; ähnelt.
+        /// </summary>
+        internal static string Ligue1Standings {
+            get {
+                return ResourceManager.GetString("Ligue1Standings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die &lt;!DOCTYPE html&gt;
+        ///&lt;html&gt;
+        ///&lt;body&gt;
+        ///
+        ///&lt;div id=&quot;wg-api-football-standings&quot;
+        ///    data-host=&quot;v3.football.api-sports.io&quot;
+        ///    data-key=&quot;6382ac6ee050e80202c6e4eb4ac42321&quot;
+        ///    data-league=&quot;39&quot;
+        ///    data-team=&quot;&quot;
+        ///    data-season=&quot;2021&quot;
+        ///    data-theme=&quot;dark&quot;
+        ///    data-show-errors=&quot;true&quot;
+        ///    data-show-logos=&quot;true&quot;
+        ///    class=&quot;wg_loader&quot;&gt;
+        ///&lt;/div&gt;
+        ///&lt;script
+        ///    type=&quot;module&quot;
+        ///    src=&quot;https://widgets.api-sports.io/football/1.1.8/widget.js&quot;&gt;
+        ///&lt;/script&gt;
+        ///
+        ///
+        ///&lt;/body&gt;
+        ///&lt;/html&gt; ähnelt.
+        /// </summary>
+        internal static string PremStandings {
+            get {
+                return ResourceManager.GetString("PremStandings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die &lt;!DOCTYPE html&gt;
+        ///&lt;html&gt;
+        ///&lt;body&gt;
+        ///
+        ///&lt;div id=&quot;wg-api-football-standings&quot;
+        ///    data-host=&quot;v3.football.api-sports.io&quot;
+        ///    data-key=&quot;6382ac6ee050e80202c6e4eb4ac42321&quot;
+        ///    data-league=&quot;135&quot;
+        ///    data-team=&quot;&quot;
+        ///    data-season=&quot;2021&quot;
+        ///    data-theme=&quot;dark&quot;
+        ///    data-show-errors=&quot;true&quot;
+        ///    data-show-logos=&quot;true&quot;
+        ///    class=&quot;wg_loader&quot;&gt;
+        ///&lt;/div&gt;
+        ///&lt;script
+        ///    type=&quot;module&quot;
+        ///    src=&quot;https://widgets.api-sports.io/football/1.1.8/widget.js&quot;&gt;
+        ///&lt;/script&gt;
+        ///
+        ///
+        ///&lt;/body&gt;
+        ///&lt;/html&gt; ähnelt.
+        /// </summary>
+        internal static string SerieStandings {
+            get {
+                return ResourceManager.GetString("SerieStandings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap unnamed {

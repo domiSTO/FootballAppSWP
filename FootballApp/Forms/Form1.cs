@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CefSharp;
+using CefSharp.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -114,6 +116,10 @@ namespace FootballApp
 
         private void Frm_Leagues_Load(object sender, EventArgs e)
         {
+
+            CefSettings settings = new CefSettings();
+            Cef.Initialize(settings);
+
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;

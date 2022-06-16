@@ -34,6 +34,7 @@ namespace FootballApp
             this.btn_back_lig1 = new System.Windows.Forms.Button();
             this.lbl_ligue1 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.pnl_browser = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // btn_back_lig1
@@ -62,15 +63,24 @@ namespace FootballApp
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             this.imageList1.Images.SetKeyName(0, "Paris.png");
             // 
+            // pnl_browser
+            // 
+            this.pnl_browser.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnl_browser.Location = new System.Drawing.Point(0, 0);
+            this.pnl_browser.Name = "pnl_browser";
+            this.pnl_browser.Size = new System.Drawing.Size(800, 450);
+            this.pnl_browser.TabIndex = 3;
+            // 
             // Ligue1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pnl_browser);
             this.Controls.Add(this.lbl_ligue1);
             this.Controls.Add(this.btn_back_lig1);
             this.Name = "Ligue1";
-            this.Text = "Ligue1";
+            this.Text = "anel";
             this.Load += new System.EventHandler(this.Ligue1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -82,5 +92,6 @@ namespace FootballApp
         private System.Windows.Forms.Button btn_back_lig1;
         private System.Windows.Forms.Label lbl_ligue1;
         private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.Panel pnl_browser;
     }
 }
