@@ -93,6 +93,16 @@ namespace FootballApp.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logo_transparent {
+            get {
+                object obj = ResourceManager.GetObject("logo_transparent", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ManCity {
             get {
                 object obj = ResourceManager.GetObject("ManCity", resourceCulture);
@@ -117,6 +127,16 @@ namespace FootballApp.Properties {
             get {
                 object obj = ResourceManager.GetObject("Real_Madrid", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Icon ähnlich wie (Symbol).
+        /// </summary>
+        internal static System.Drawing.Icon soccer_ball_39433___Kopie {
+            get {
+                object obj = ResourceManager.GetObject("soccer_ball_39433___Kopie", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
             }
         }
         

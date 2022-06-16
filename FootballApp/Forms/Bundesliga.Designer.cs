@@ -29,6 +29,7 @@ namespace FootballApp
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Bundesliga));
             this.lbl_bundesliga = new System.Windows.Forms.Label();
             this.pnl_browser = new System.Windows.Forms.Panel();
             this.SuspendLayout();
@@ -58,6 +59,9 @@ namespace FootballApp
             this.ClientSize = new System.Drawing.Size(743, 450);
             this.Controls.Add(this.pnl_browser);
             this.Controls.Add(this.lbl_bundesliga);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Bundesliga";
             this.Text = "Bundesliga";
             this.Load += new System.EventHandler(this.Bundesliga_Load);

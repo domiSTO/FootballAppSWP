@@ -29,6 +29,7 @@ namespace FootballApp
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PremierLeague));
             this.btn_back_pl = new System.Windows.Forms.Button();
             this.lbl_premierleague = new System.Windows.Forms.Label();
             this.btn_Teams_Bayern = new System.Windows.Forms.Button();
@@ -81,6 +82,9 @@ namespace FootballApp
             this.Controls.Add(this.btn_Teams_Bayern);
             this.Controls.Add(this.lbl_premierleague);
             this.Controls.Add(this.btn_back_pl);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "PremierLeague";
             this.Text = "PremierLeague";
             this.Load += new System.EventHandler(this.PremierLeague_Load);

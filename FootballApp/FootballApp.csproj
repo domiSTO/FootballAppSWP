@@ -63,12 +63,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\AddTeams.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\AddTeams.Designer.cs">
-      <DependentUpon>AddTeams.cs</DependentUpon>
-    </Compile>
     <Compile Include="Classes\BCrypt.cs" />
     <Compile Include="Forms\Eredivisie.cs">
       <SubType>Form</SubType>
@@ -114,12 +108,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Forms\Register.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Register.Designer.cs">
-      <DependentUpon>Register.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\SerieA.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,9 +118,6 @@
     <Compile Include="Classes\ToggleButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <EmbeddedResource Include="Forms\AddTeams.resx">
-      <DependentUpon>AddTeams.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Eredivisie.resx">
       <DependentUpon>Eredivisie.cs</DependentUpon>
     </EmbeddedResource>
@@ -164,9 +149,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Forms\Register.resx">
-      <DependentUpon>Register.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\SerieA.resx">
       <DependentUpon>SerieA.cs</DependentUpon>
     </EmbeddedResource>
@@ -208,7 +190,9 @@
   <ItemGroup>
     <None Include="Properties\Star_filled.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\logo_transparent.png" />
+  </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="html-resources\BuliStandings.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -228,6 +212,9 @@
     <EmbeddedResource Include="html-resources\SerieAStandings.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\soccer-ball_39433 - Kopie.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

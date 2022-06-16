@@ -31,8 +31,6 @@ namespace FootballApp
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Leagues));
             this.leagues_Title = new System.Windows.Forms.Label();
-            this.btn_Login = new System.Windows.Forms.Button();
-            this.pbbox_starunfilled = new System.Windows.Forms.PictureBox();
             this.pb_DarkMode = new System.Windows.Forms.PictureBox();
             this.pb_LightMode = new System.Windows.Forms.PictureBox();
             this.btn_LaLiga = new System.Windows.Forms.Button();
@@ -43,12 +41,9 @@ namespace FootballApp
             this.btn_Premierleague_Darkmode = new System.Windows.Forms.Button();
             this.btn_Eredivisie = new System.Windows.Forms.Button();
             this.btn_Eredivisie_Darkmode = new System.Windows.Forms.Button();
-            this.pbbox_filled = new System.Windows.Forms.PictureBox();
             this.tb_DarkTheme = new FootballApp.ToggleButton();
-            ((System.ComponentModel.ISupportInitialize)(this.pbbox_starunfilled)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_DarkMode)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_LightMode)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbbox_filled)).BeginInit();
             this.SuspendLayout();
             // 
             // leagues_Title
@@ -60,30 +55,6 @@ namespace FootballApp
             this.leagues_Title.Size = new System.Drawing.Size(283, 31);
             this.leagues_Title.TabIndex = 0;
             this.leagues_Title.Text = "Wählen Sie Ihre Liga";
-            // 
-            // btn_Login
-            // 
-            this.btn_Login.FlatAppearance.BorderSize = 2;
-            this.btn_Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Login.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Login.Location = new System.Drawing.Point(690, 12);
-            this.btn_Login.Name = "btn_Login";
-            this.btn_Login.Size = new System.Drawing.Size(107, 55);
-            this.btn_Login.TabIndex = 6;
-            this.btn_Login.Text = "Login";
-            this.btn_Login.UseVisualStyleBackColor = true;
-            this.btn_Login.Click += new System.EventHandler(this.btn_Login_Click_1);
-            // 
-            // pbbox_starunfilled
-            // 
-            this.pbbox_starunfilled.Image = global::FootballApp.Properties.Resources.Star_unfilled;
-            this.pbbox_starunfilled.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbbox_starunfilled.InitialImage")));
-            this.pbbox_starunfilled.Location = new System.Drawing.Point(619, 16);
-            this.pbbox_starunfilled.Name = "pbbox_starunfilled";
-            this.pbbox_starunfilled.Size = new System.Drawing.Size(50, 55);
-            this.pbbox_starunfilled.TabIndex = 13;
-            this.pbbox_starunfilled.TabStop = false;
-            this.pbbox_starunfilled.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pb_DarkMode
             // 
@@ -201,17 +172,6 @@ namespace FootballApp
             this.btn_Eredivisie_Darkmode.UseVisualStyleBackColor = true;
             this.btn_Eredivisie_Darkmode.Click += new System.EventHandler(this.btn_Eredivisie_Darkmode_Click);
             // 
-            // pbbox_filled
-            // 
-            this.pbbox_filled.Image = global::FootballApp.Properties.Resources.Star_filled;
-            this.pbbox_filled.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbbox_filled.InitialImage")));
-            this.pbbox_filled.Location = new System.Drawing.Point(619, 16);
-            this.pbbox_filled.Name = "pbbox_filled";
-            this.pbbox_filled.Size = new System.Drawing.Size(50, 55);
-            this.pbbox_filled.TabIndex = 14;
-            this.pbbox_filled.TabStop = false;
-            this.pbbox_filled.Click += new System.EventHandler(this.pbbox_filled_Click);
-            // 
             // tb_DarkTheme
             // 
             this.tb_DarkTheme.AutoSize = true;
@@ -236,7 +196,6 @@ namespace FootballApp
             this.Controls.Add(this.pb_DarkMode);
             this.Controls.Add(this.pb_LightMode);
             this.Controls.Add(this.tb_DarkTheme);
-            this.Controls.Add(this.btn_Login);
             this.Controls.Add(this.btn_LaLiga);
             this.Controls.Add(this.btn_SerieA);
             this.Controls.Add(this.btn_Ligue1);
@@ -246,16 +205,13 @@ namespace FootballApp
             this.Controls.Add(this.btn_Premierleague_Darkmode);
             this.Controls.Add(this.btn_Eredivisie);
             this.Controls.Add(this.btn_Eredivisie_Darkmode);
-            this.Controls.Add(this.pbbox_filled);
-            this.Controls.Add(this.pbbox_starunfilled);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Frm_Leagues";
             this.Text = "Ligen wählen";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Frm_Leagues_FormClosed);
             this.Load += new System.EventHandler(this.Frm_Leagues_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pbbox_starunfilled)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_DarkMode)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_LightMode)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbbox_filled)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -275,9 +231,6 @@ namespace FootballApp
         private System.Windows.Forms.Button btn_Eredivisie_Darkmode;
         private System.Windows.Forms.PictureBox pb_LightMode;
         private System.Windows.Forms.PictureBox pb_DarkMode;
-        public System.Windows.Forms.Button btn_Login;
-        private System.Windows.Forms.PictureBox pbbox_starunfilled;
-        private System.Windows.Forms.PictureBox pbbox_filled;
     }
 }
 
