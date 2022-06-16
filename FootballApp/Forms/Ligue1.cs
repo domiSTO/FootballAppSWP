@@ -27,7 +27,7 @@ namespace FootballApp
         ChromiumWebBrowser browser;
         private void Ligue1_Load(object sender, EventArgs e)
         {
-            //Chromiumbrowser öffnen
+            //opens the chromium browser
             var adress = $@"{Application.StartupPath}\html-resources\Ligue1Standings.html";
             
             browser = new ChromiumWebBrowser(adress);

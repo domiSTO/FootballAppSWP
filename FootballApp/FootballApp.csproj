@@ -76,12 +76,6 @@
     <Compile Include="Forms\Eredivisie.Designer.cs">
       <DependentUpon>Eredivisie.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Login.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Bundesliga.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,9 +129,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Ligue1.resx">
       <DependentUpon>Ligue1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Bundesliga.resx">
       <DependentUpon>Bundesliga.cs</DependentUpon>

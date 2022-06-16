@@ -21,7 +21,7 @@ namespace FootballApp
         ChromiumWebBrowser browser;
         private void PremierLeague_Load(object sender, EventArgs e)
         {
-            //Chromiumbrowser öffnen
+            //opens the chromium browser
             var adress = $@"{Application.StartupPath}\html-resources\PremStandings.html";
             browser = new ChromiumWebBrowser(adress);
 

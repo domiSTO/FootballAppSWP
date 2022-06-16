@@ -39,7 +39,7 @@ namespace FootballApp
             this.btn_Eredivisie = new System.Windows.Forms.Button();
             this.btn_Eredivisie_Darkmode = new System.Windows.Forms.Button();
             this.btn_currentgames = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_Exit = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -138,14 +138,13 @@ namespace FootballApp
             this.btn_Eredivisie_Darkmode.Size = new System.Drawing.Size(203, 194);
             this.btn_Eredivisie_Darkmode.TabIndex = 10;
             this.btn_Eredivisie_Darkmode.UseVisualStyleBackColor = true;
-            this.btn_Eredivisie_Darkmode.Click += new System.EventHandler(this.btn_Eredivisie_Darkmode_Click);
             // 
             // btn_currentgames
             // 
             this.btn_currentgames.FlatAppearance.BorderSize = 0;
             this.btn_currentgames.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_currentgames.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_currentgames.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btn_currentgames.ForeColor = System.Drawing.Color.Transparent;
             this.btn_currentgames.Image = global::FootballApp.Properties.Resources.sportsball1;
             this.btn_currentgames.Location = new System.Drawing.Point(564, 25);
             this.btn_currentgames.Name = "btn_currentgames";
@@ -156,18 +155,18 @@ namespace FootballApp
             this.btn_currentgames.UseVisualStyleBackColor = true;
             this.btn_currentgames.Click += new System.EventHandler(this.btn_currentgames_Click);
             // 
-            // button1
+            // btn_Exit
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(757, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(25, 25);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_Exit.FlatAppearance.BorderSize = 0;
+            this.btn_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Exit.ForeColor = System.Drawing.Color.White;
+            this.btn_Exit.Location = new System.Drawing.Point(757, 12);
+            this.btn_Exit.Name = "btn_Exit";
+            this.btn_Exit.Size = new System.Drawing.Size(25, 25);
+            this.btn_Exit.TabIndex = 14;
+            this.btn_Exit.Text = "X";
+            this.btn_Exit.UseVisualStyleBackColor = true;
+            this.btn_Exit.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox1
             // 
@@ -186,7 +185,7 @@ namespace FootballApp
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(794, 577);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_Exit);
             this.Controls.Add(this.btn_currentgames);
             this.Controls.Add(this.btn_LaLiga);
             this.Controls.Add(this.btn_SerieA);
@@ -218,7 +217,7 @@ namespace FootballApp
         private System.Windows.Forms.Button btn_Premierleague_Darkmode;
         private System.Windows.Forms.Button btn_Eredivisie_Darkmode;
         private System.Windows.Forms.Button btn_currentgames;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_Exit;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

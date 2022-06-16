@@ -22,7 +22,7 @@ namespace FootballApp
         ChromiumWebBrowser browser;
         private void Bundesliga_Load(object sender, EventArgs e)
         {
-            //Chromiumbrowser öffnen
+            //Opens the chromium browser
             var adress = $@"{Application.StartupPath}\html-resources\BuliStandings.html";
             browser = new ChromiumWebBrowser(adress);
 

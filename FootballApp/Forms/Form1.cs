@@ -61,66 +61,19 @@ namespace FootballApp
             laliga.Show();
         }
 
-        private void btn_Login_Click_1(object sender, EventArgs e)
-        {
-            //links to the Login Form
-            Login login_start = new Login();
-            login_start.Show();
-            this.Hide();
-            
-        }
-
-        private void btn_Eredivisie_Click(object sender, EventArgs e)
+        private void btn_Eredivisie_Click_1(object sender, EventArgs e)
         {
             //links to the Eredivisie Form
             Eredivisie eredivisie = new Eredivisie();
             eredivisie.Show();
         }
-
-        private void btn_Eredivisie_Darkmode_Click(object sender, EventArgs e)
-        {
-            Eredivisie eredivisie = new Eredivisie();
-            eredivisie.Show();
-        }
-
-        private void btn_Eredivisie_Click_1(object sender, EventArgs e)
-        {
-            Eredivisie eredivisie = new Eredivisie();
-            eredivisie.Show();
-        }
-
-        private void btn_addteams_Click(object sender, EventArgs e)
-        {
-            
-
-        }
-
-        
-
        
         private void Frm_Leagues_Load(object sender, EventArgs e)
         {
-            //Chromiumbrowser initialisieren
+            //Initializing the chromium browser
             CefSettings settings = new CefSettings();
             Cef.Initialize(settings);
 
-            
-
-            
-
-
-
-            // Create Database and Tables with SQL-Connection
-            SQL_Connection.CreateDatabase("FootballApp");
-            SQL_Connection.CreateTable("FootballApp", "Login");
-
-            SQL_Connection.CreateTable1("FootballApp", "Teams");
-            SQL_Connection.CreateTable2("FootballApp", "Ligen");
-
-            SQL_Connection.InsertLeagues("FootballApp", "Ligen");
-
-
-           
 
         }
 
@@ -128,17 +81,6 @@ namespace FootballApp
         {
             Application.Exit();
         }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void pbbox_filled_Click(object sender, EventArgs e)
-        {
-           
-        }
-
         private void btn_currentgames_Click(object sender, EventArgs e)
         {
             CurrentGames currentGames = new CurrentGames();

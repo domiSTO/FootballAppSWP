@@ -25,7 +25,7 @@ namespace FootballApp
 
         private void Eredivisie_Load(object sender, EventArgs e)
         {
-            //Chromiumbrowser öffnen
+            //opens the chromium browser
             var adress = $@"{Application.StartupPath}\html-resources\EredeviseStandings.html";
             browser = new ChromiumWebBrowser(adress);
 

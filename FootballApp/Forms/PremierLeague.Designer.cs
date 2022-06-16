@@ -43,7 +43,7 @@ namespace FootballApp
             this.MaximizeBox = false;
             this.Name = "PremierLeague";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "PremierLeague";
+            this.Text = "Premier League";
             this.Load += new System.EventHandler(this.PremierLeague_Load);
             this.ResumeLayout(false);
 

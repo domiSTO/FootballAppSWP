@@ -26,7 +26,7 @@ namespace FootballApp
         ChromiumWebBrowser browser;
         private void SerieA_Load(object sender, EventArgs e)
         {
-            //Chromiumbrowser öffnen
+            //opens the chromium browser
             var adress = $@"{Application.StartupPath}\html-resources\SerieAStandings.html";
             browser = new ChromiumWebBrowser(adress);
 
