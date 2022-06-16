@@ -41,6 +41,7 @@ namespace FootballApp
             this.btn_Premierleague_Darkmode = new System.Windows.Forms.Button();
             this.btn_Eredivisie = new System.Windows.Forms.Button();
             this.btn_Eredivisie_Darkmode = new System.Windows.Forms.Button();
+            this.btn_currentgames = new System.Windows.Forms.Button();
             this.tb_DarkTheme = new FootballApp.ToggleButton();
             ((System.ComponentModel.ISupportInitialize)(this.pb_DarkMode)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_LightMode)).BeginInit();
@@ -172,6 +173,16 @@ namespace FootballApp
             this.btn_Eredivisie_Darkmode.UseVisualStyleBackColor = true;
             this.btn_Eredivisie_Darkmode.Click += new System.EventHandler(this.btn_Eredivisie_Darkmode_Click);
             // 
+            // btn_currentgames
+            // 
+            this.btn_currentgames.Location = new System.Drawing.Point(600, 16);
+            this.btn_currentgames.Name = "btn_currentgames";
+            this.btn_currentgames.Size = new System.Drawing.Size(171, 55);
+            this.btn_currentgames.TabIndex = 13;
+            this.btn_currentgames.Text = "Aktuelle Spiele";
+            this.btn_currentgames.UseVisualStyleBackColor = true;
+            this.btn_currentgames.Click += new System.EventHandler(this.btn_currentgames_Click);
+            // 
             // tb_DarkTheme
             // 
             this.tb_DarkTheme.AutoSize = true;
@@ -193,6 +204,7 @@ namespace FootballApp
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(800, 583);
+            this.Controls.Add(this.btn_currentgames);
             this.Controls.Add(this.pb_DarkMode);
             this.Controls.Add(this.pb_LightMode);
             this.Controls.Add(this.tb_DarkTheme);
@@ -231,6 +243,7 @@ namespace FootballApp
         private System.Windows.Forms.Button btn_Eredivisie_Darkmode;
         private System.Windows.Forms.PictureBox pb_LightMode;
         private System.Windows.Forms.PictureBox pb_DarkMode;
+        private System.Windows.Forms.Button btn_currentgames;
     }
 }
 

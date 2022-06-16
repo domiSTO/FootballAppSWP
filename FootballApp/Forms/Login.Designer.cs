@@ -105,7 +105,7 @@ namespace FootballApp
             this.lbl_Register_Login.TabIndex = 6;
             this.lbl_Register_Login.Text = "Registrieren";
             this.lbl_Register_Login.UseVisualStyleBackColor = true;
-            this.lbl_Register_Login.Click += new System.EventHandler(this.lbl_Register_Login_Click);
+            
             // 
             // btn_Login_Login
             // 
@@ -115,7 +115,7 @@ namespace FootballApp
             this.btn_Login_Login.TabIndex = 7;
             this.btn_Login_Login.Text = "Anmelden";
             this.btn_Login_Login.UseVisualStyleBackColor = true;
-            this.btn_Login_Login.Click += new System.EventHandler(this.btn_Login_Login_Click);
+            
             // 
             // btn_Back_Login
             // 
