@@ -34,7 +34,12 @@ namespace FootballApp
         private void Bundesliga_Load(object sender, EventArgs e)
         {
 
+            var adress = $@"{Application.StartupPath}\html-resources\BuliStandings.html";
+            browser = new ChromiumWebBrowser(adress);
 
+            pnl_browser.Controls.Add(browser);
+            
+           
 
 
 

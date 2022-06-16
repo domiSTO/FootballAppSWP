@@ -210,12 +210,24 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Content Include="html-resources\BuliStandings.html" />
-    <Content Include="html-resources\EredeviseStandings.html" />
-    <Content Include="html-resources\LaLigaStandings.html" />
-    <Content Include="html-resources\Ligue1Standings.html" />
-    <Content Include="html-resources\PremStandings.html" />
-    <Content Include="html-resources\SerieAStandings.html" />
+    <EmbeddedResource Include="html-resources\BuliStandings.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="html-resources\EredeviseStandings.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="html-resources\LaLigaStandings.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="html-resources\Ligue1Standings.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="html-resources\PremStandings.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="html-resources\SerieAStandings.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
